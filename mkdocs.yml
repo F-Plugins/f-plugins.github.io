@@ -1,0 +1,21 @@
+site_name: SilK's Plugins Docs
+site_description: Documentation for SilK's Plugins.
+site_author: SilK
+site_url: http://docs.silksplugins.com/
+
+nav:
+- Home: index.md
+- Paid Plugins:
+  - Shops UI: plugins/shops-ui.md
+
+markdown_extensions:
+- pymdownx.details
+- pymdownx.superfences
+
+theme:
+  name: material
+  
+  favicon: assets/images/favicon.ico
+  logo: assets/images/logo.png
+  
+  include_homepage_in_sidebar: false

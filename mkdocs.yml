@@ -1,7 +1,7 @@
 site_name: SilK's Plugins Docs
 site_description: Documentation for SilK's Plugins.
 site_author: SilK
-site_url: http://docs.silksplugins.com/
+site_url: https://docs.silksplugins.com/
 
 nav:
 - Home: index.md

@@ -1,7 +1,7 @@
 # <img src="/assets/images/plugins/shops-ui/logo.png" width="45" style="vertical-align: bottom;"/> Shops UI
 
 Platforms: **OpenMod**  
-Price: **$12 USD**  
+Price: **$15 USD**  
 **[Buy on Imperial Plugins](https://imperialplugins.com/Unturned/Products/Shops-UI)**
 
 **Have you ever wanted your shops to be accessible through a UI?**

@@ -7,6 +7,7 @@ nav:
 - Home: index.md
 - Paid Plugins:
   - Code Locks: plugins/code-locks.md
+  - Drop Boxes: plugins/dropboxes.md
   - Hitman: plugins/hitman.md
   - Movement Modifier: plugins/movement-modifier.md
   - Shops UI: plugins/shops-ui.md

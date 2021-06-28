@@ -72,11 +72,15 @@ bypasslock
 ## Configuration
 
 - **Effects** - Effect IDs used by the plugin. Switch success and failure to zero to disable sounds.
-- **Remember Owner** - Whether or not the owner must enter the code each time.
-- **Remember Users** - Whether or not other users need to enter the code every time.
-- **Non-Owner Can Change Code** - Whether or not users who aren't the owner can change the lock.
+- **Remember Owner** - Whether or not the owner must enter the code each time.  
+  *Default: true*
+- **Remember Users** - Whether or not other users need to enter the code every time.  
+  *Default: true*
+- **Non-Owner Can Change Code** - Whether or not users who aren't the owner can change the lock.  
+  *Default: true*
 - **Attempts** - Settings related to failed attempts to enter a code.
-  - **Cooldown** - The time (in seconds) before an attempt is 'forgotten'.
+  - **Cooldown** - The time (in seconds) before an attempt is 'forgotten'.  
+    *Default: 60 seconds*
   - **Damages** - The damage to be dealt at a certain failed attempt.
     Example: 0, 30, 50, 255
     Zero damage would be dealt on the first attempt, 30 on the next, the max damage would be dealt on the fourth attempt (and all attempts afterwards).

@@ -2,7 +2,7 @@
 
 Platforms: **OpenMod**, **Rocket**  
 Price: **$5 USD**  
-**[Buy on Imperial Plugins](https://imperialplugins.com/Unturned/Products/Movement Modifier)**
+**[Buy on Imperial Plugins](https://imperialplugins.com/Unturned/Products/Movement-Modifier)**
 
 **Want players to move slower with heavy armor?**  
 **How about jump higher with certain guns?**

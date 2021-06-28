@@ -11,6 +11,7 @@ nav:
   - Movement Modifier: plugins/movement-modifier.md
   - Shops UI: plugins/shops-ui.md
   - Vehicle Despawner: plugins/vehicle-despawner.md
+  - Weapon Features: plugins/weapon-features.md
 
 markdown_extensions:
 - pymdownx.details

@@ -9,6 +9,7 @@ nav:
   - Code Locks: plugins/code-locks.md
   - Hitman: plugins/hitman.md
   - Shops UI: plugins/shops-ui.md
+  - Vehicle Despawner: plugins/vehicle-despawner.md
 
 markdown_extensions:
 - pymdownx.details

@@ -18,7 +18,7 @@ Easily migrate from your existing ZaupShops installation using the migration com
 
 ***
 
-### Usage
+## Usage
 
 Players can simply use /shop (or /vshop to directly access the vehicle shop).
 See the media on this page to view an example of the UI.
@@ -29,7 +29,7 @@ Shop whitelists/blacklists are supported. The permission you specify in the comm
 
 ***
 
-### Migration
+## Migration
 
 If you wish to migrate from ZaupShops, you can simply run the command `/shop migrate`.
 
@@ -42,7 +42,7 @@ For example, the following permissions show their original and their migrated pe
 
 ***
 
-### Commands
+## Commands
 
 **Commands for UI:**
 
@@ -81,9 +81,9 @@ The permission you specify has `ShopsUI:groups.` added to the front of it. `abc`
 
 ***
 
-### Permissions
+## Permissions
 
-#### Basic User Permissions
+### Basic User Permissions
 
 Grant access to the `/buy` command:
 ```
@@ -110,7 +110,7 @@ Grant access to the `/vshop` command to directly navigate to vehicle shops in th
 ShopsUI:commands.vshop
 ```
 
-#### Administrative Permissions
+### Administrative Permissions
 
 Grant access to manage item shops:
 ```
@@ -124,7 +124,7 @@ ShopsUI:commands.vshop.*
 
 ***
 
-### Configuration
+## Configuration
 ??? note "Click to reveal default configuration"
     ```yaml
     database:
@@ -149,7 +149,7 @@ ShopsUI:commands.vshop.*
 
 ***
 
-### Translations
+## Translations
 
 You can change the color of both UI and command text translations by using [Unity's rich text format](https://docs.unity3d.com/560/Documentation/Manual/StyledText.html).
 
@@ -262,7 +262,7 @@ Balance: "<color=#0000FF>{CurrencySymbol}{Balance:0.00}</color>"
 
 ***
 
-### Installation
+## Installation
 
 1. Run the following command to install necessary libraries:
   ```

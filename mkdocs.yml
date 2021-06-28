@@ -8,6 +8,7 @@ nav:
 - Paid Plugins:
   - Code Locks: plugins/code-locks.md
   - Hitman: plugins/hitman.md
+  - Movement Modifier: plugins/movement-modifier.md
   - Shops UI: plugins/shops-ui.md
   - Vehicle Despawner: plugins/vehicle-despawner.md
 

@@ -6,6 +6,7 @@ site_url: https://docs.silksplugins.com/
 nav:
 - Home: index.md
 - Paid Plugins:
+  - Hitman: plugins/hitman.md
   - Shops UI: plugins/shops-ui.md
 
 markdown_extensions:

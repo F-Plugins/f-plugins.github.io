@@ -264,7 +264,7 @@ Balance: "<color=#0000FF>{CurrencySymbol}{Balance:0.00}</color>"
 
 ## Installation
 
-1. Run the following command to install necessary libraries:
+1. Run the following commands to install necessary libraries:
   ```
   openmod install OpenMod.EntityFrameworkCore.MySql
   ```

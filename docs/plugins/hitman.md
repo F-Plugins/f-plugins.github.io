@@ -35,6 +35,11 @@ Grant access to the `/hit` command:
 Hitman:commands.hit
 ```
 
+Grant access to receive awards for killing players with hits:
+```
+Hitman:hitman
+```
+
 Grant access to see the Hitman UI:
 ```
 Hitman:ui
@@ -43,6 +48,11 @@ Hitman:ui
 Grant access to the `/hitsui` command:
 ```
 Hitman:commands.hitsui
+```
+
+Grant access to be exempt from hits. Hits cannot be placed on players with this permission.
+```
+Hitman:exempt
 ```
 
 ***

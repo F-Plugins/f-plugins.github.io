@@ -22,9 +22,9 @@ You can choose to have the on the left or right hand side by changing the config
 
 ## Commands
 
-- /hit `<player> <bounty>` - Places a hit on the target player for the given amount.
+- `/hit <player> <bounty>` - Places a hit on the target player for the given amount.
 
-- /hitsui - Toggles the Hitman UI.
+- `/hitsui` - Toggles the Hitman UI.
 
 ***
 

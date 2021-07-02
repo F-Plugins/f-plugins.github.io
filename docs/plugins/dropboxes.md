@@ -22,16 +22,16 @@ Loot boxes can also be directly given to players for use in donation systems and
 
 ## Commands
 
-- /unbox `<box>` - Unbox a loot box.
+- `/unbox <box>` - Unbox a loot box.
   Requires the `DropBoxes:commands.unbox` permission.
 
-- /boxes - View your loot boxes.
+- `/boxes` - View your loot boxes.
   Requires the `DropBoxes:commands.boxes` permission.
 
-- /givebox `<player> <box>` - Give an online player a loot box.
+- `/givebox <player> <box>` - Give an online player a loot box.
   Requires the `DropBoxes:commands.givebox` permission.
 
-- /giveboxbyid `<steam id> <box>` - Give the player with the steam ID a loot box.
+- `/giveboxbyid <steam id> <box>` - Give the player with the steam ID a loot box.
   Requires the `DropBoxes:commands.giveboxbyid` permission.
 
 ***

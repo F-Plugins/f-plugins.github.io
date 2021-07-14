@@ -115,7 +115,7 @@ Feel free to [ask questions in our Discord server.](https://silksplugins.com/dis
     # Here we'll use the pattern to give the player an empty can whenever the eat/drink something canned:
     - Pattern: "Canned"
       Rewards:
-      - GiveItem: Can
+      - GiveItem: "Metal Can"
 
     # Just for another example, let's lower the player's reputation when they eat venison (vegetarian server):
     - Pattern: "Venison"
@@ -130,7 +130,7 @@ Feel free to [ask questions in our Discord server.](https://silksplugins.com/dis
       - GiveRole: "vip"
         SendMessage: "Congratulations! You defied the odds, got VIP, and didn't die!"
         Chance: 1 # 1% chance
-      # Kill the player using a command 
+      # Kill and ban the player using a command
       - RunCommand: "slay {User.SteamId}"
         Chance: 10 # 10% chance
     ```

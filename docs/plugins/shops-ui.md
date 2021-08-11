@@ -266,9 +266,6 @@ Balance: "<color=#0000FF>{CurrencySymbol}{Balance:0.00}</color>"
 
 1. Run the following commands to install necessary libraries:
   ```
-  openmod install OpenMod.EntityFrameworkCore.MySql
-  ```
-  ```
   openmod install SilK.Unturned.Extras
   ```
 

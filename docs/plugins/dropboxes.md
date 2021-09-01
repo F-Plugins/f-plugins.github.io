@@ -160,7 +160,7 @@ DropBoxes:commands.giveboxbyid
 
     Commands:
       Success:
-        LootBoxes: "Available loot boxes: {LootBoxes:x{Amount} {Name}|, |, and }"
+        LootBoxes: "{LootBoxes.Count:cond:!=0?Available loot boxes: {LootBoxes:x{Amount} {Name}|, |, and }|No loot boxes available.}"
         Unbox: "You have unboxed a {Item.Asset.ItemName} from your {LootBox.Name}!"
         GiveBox: "You have given {User.DisplayName} a {LootBox.Name}."
         GiveBoxById: "You have given {SteamId} a {LootBox.Name}."

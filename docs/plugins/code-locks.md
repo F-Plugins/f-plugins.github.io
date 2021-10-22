@@ -78,7 +78,7 @@ bypasslock
   *Default: true*
 - **Non-Owner Can Change Code** - Whether or not users who aren't the owner can change the lock.  
   *Default: true*
-- **Only Owner Can Lock** - Whether or not users who own the barricade can lock the barricade.
+- **Only Owner Can Lock** - Whether or not users who do not own the barricade can lock the barricade.
   *Default: false*
 - **Attempts** - Settings related to failed attempts to enter a code.
   - **Cooldown** - The time (in seconds) before an attempt is 'forgotten'.  

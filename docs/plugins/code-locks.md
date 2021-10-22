@@ -78,6 +78,8 @@ bypasslock
   *Default: true*
 - **Non-Owner Can Change Code** - Whether or not users who aren't the owner can change the lock.  
   *Default: true*
+- **Only Owner Can Lock** - Whether or not users who own the barricade can lock the barricade.
+  *Default: false*
 - **Attempts** - Settings related to failed attempts to enter a code.
   - **Cooldown** - The time (in seconds) before an attempt is 'forgotten'.  
     *Default: 60 seconds*
@@ -103,6 +105,9 @@ bypasslock
     # Whether or not users who aren't the owner can change the lock
     nonOwnerCanChangeCode: true
 
+    # Whether or not users who own the barricade can lock the barricade
+    onlyOwnerCanLock: false
+
     attempts:
       cooldown: 60 # Cooldown in seconds
       damages:
@@ -121,6 +126,7 @@ bypasslock
       <RememberOwner>true</RememberOwner>
       <RememberUsers>true</RememberUsers>
       <NonOwnerCanChangeCode>true</NonOwnerCanChangeCode>
+      <OnlyOwnerCanLock>false</OnlyOwnerCanLock>
       <Effects>
         <UI>29123</UI>
         <Success>29124</Success>

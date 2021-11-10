@@ -58,6 +58,7 @@ Basic commands:
 - `/vshop add <vehicle> <price>` - Adds the vehicle to the shop to be bought.
 - `/vshop remove <vehicle>` - Removes the buyable vehicle from the shop.
 - `/shop reload` - Reloads the shops from the database.
+- `/sellbox` - Opens a virtual storage for selling items.
 
 UI-related management commands:
 
@@ -78,6 +79,47 @@ The permission you specify has `ShopsUI:groups.` added to the front of it. `abc`
 - `/buy <item> [amount]` - Buys the item from the shop.
 - `/sell <item> [amount]` - Sells the item to the shop.
 - `/vbuy <vehicle>` - Buys the vehicle from the shop.
+
+***
+
+## Sellbox
+
+The `/sellbox` command feature allows players to quickly sell items by placing them in a virtual storage.
+
+The default sellbox size is configurable in the `config.yaml` file.
+
+To set sell box sizes for certain permission roles, simply add the following lines below the `data` entry of a role (change width and height to what you'd like).
+
+```yaml
+sellbox:
+  width: 8
+  height: 12
+```
+
+??? note "Click to reveal an example using the default OpenMod permissions file"
+    ```yaml
+roles:
+- id: default
+  parents: []
+  permissions:
+  - OpenMod.Core:help
+  displayName: Default
+  data:
+    sellbox:
+      width: 6
+      height: 8
+  isAutoAssigned: true
+- id: vip
+  priority: 1
+  parents:
+  - default
+  permissions:
+  - SomeKitsPlugin:kits.vip
+  data:
+    sellbox:
+      width: 10
+      height: 12
+    ```
 
 ***
 
@@ -142,6 +184,10 @@ ShopsUI:commands.vshop.*
       # When this setting is set to true, shop whitelists will not be ignored.
       whitelistEnabled: false
 
+    sellbox: # Default sellbox size. Set either to zero to disable by default.
+      width: 8
+      height: 6
+
     ui:
       logoUrl: "https://i.imgur.com/t6HbFTN.png"
       mainEffect: 29150
@@ -205,6 +251,8 @@ Balance: "<color=#0000FF>{CurrencySymbol}{Balance:0.00}</color>"
           removed:
             item: "Successfully removed blacklist for item {ItemAsset.ItemAssetId} with permission {Permission}."
             vehicle: "Successfully removed blacklist for vehicle {VehicleAsset.VehicleAssetId} with permission {Permission}."
+        sellbox_sold: "You have sold {TotalAmount} items for {TotalPrice}. {ReturnedAmount} have been returned to you."
+
       errors:
         invalid_item_id: "Given item id ({IdOrName}) does not exist."
         invalid_vehicle_id: "Given vehicle id ({IdOrName}) does not exist."
@@ -218,6 +266,7 @@ Balance: "<color=#0000FF>{CurrencySymbol}{Balance:0.00}</color>"
         no_buyable_vehicle_shop: "The vehicle {VehicleAsset.VehicleName} cannot be bought."
         not_permitted_item: "You are not permitted to buy/sell {ItemAsset.ItemName}."
         not_permitted_vehicle: "You are not permitted to buy {VehicleAsset.VehicleName}."
+        no_sellbox: "You cannot use /sellbox."
         shop_whitelist:
           added:
             item: "A whitelist for this item could not be added. This shop may not exist or the whitelist has already been added."

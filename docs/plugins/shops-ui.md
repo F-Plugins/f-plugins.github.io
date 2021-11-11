@@ -251,7 +251,7 @@ Balance: "<color=#0000FF>{CurrencySymbol}{Balance:0.00}</color>"
           removed:
             item: "Successfully removed blacklist for item {ItemAsset.ItemAssetId} with permission {Permission}."
             vehicle: "Successfully removed blacklist for vehicle {VehicleAsset.VehicleAssetId} with permission {Permission}."
-        sellbox_sold: "You have sold {TotalAmount} items for {TotalPrice}. {ReturnedAmount} have been returned to you."
+        sellbox_sold: "You have sold {TotalAmount} items for {CurrencySymbol}{TotalPrice:0.00}. {ReturnedAmount} have been returned to you."
 
       errors:
         invalid_item_id: "Given item id ({IdOrName}) does not exist."

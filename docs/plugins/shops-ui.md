@@ -98,27 +98,27 @@ sellbox:
 
 ??? note "Click to reveal an example using the default OpenMod permissions file"
     ```yaml
-roles:
-- id: default
-  parents: []
-  permissions:
-  - OpenMod.Core:help
-  displayName: Default
-  data:
-    sellbox:
-      width: 6
-      height: 8
-  isAutoAssigned: true
-- id: vip
-  priority: 1
-  parents:
-  - default
-  permissions:
-  - SomeKitsPlugin:kits.vip
-  data:
-    sellbox:
-      width: 10
-      height: 12
+    roles:
+    - id: default
+      parents: []
+      permissions:
+      - OpenMod.Core:help
+      displayName: Default
+      data:
+        sellbox:
+          width: 6
+          height: 8
+      isAutoAssigned: true
+    - id: vip
+      priority: 1
+      parents:
+      - default
+      permissions:
+      - SomeKitsPlugin:kits.vip
+      data:
+        sellbox:
+          width: 10
+          height: 12
     ```
 
 ***

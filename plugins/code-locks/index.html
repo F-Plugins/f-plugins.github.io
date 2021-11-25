@@ -1,0 +1,854 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for SilK's Plugins.">
+      
+      
+      
+        <meta name="author" content="SilK">
+      
+      
+        <link rel="canonical" href="https://docs.silksplugins.com/plugins/code-locks/">
+      
+      <link rel="icon" href="../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+    
+    
+      
+        <title>Code Locks - SilK's Plugins Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a57b2b03.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#code-locks" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="SilK&#39;s Plugins Docs" class="md-header__button md-logo" aria-label="SilK's Plugins Docs" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SilK's Plugins Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Code Locks
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SilK&#39;s Plugins Docs" class="md-nav__button md-logo" aria-label="SilK's Plugins Docs" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.png" alt="logo">
+
+    </a>
+    SilK's Plugins Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Paid Plugins
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Paid Plugins" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Paid Plugins
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Code Locks
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Code Locks
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    Commands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permissions" class="md-nav__link">
+    Permissions
+  </a>
+  
+    <nav class="md-nav" aria-label="Permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openmod" class="md-nav__link">
+    OpenMod
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rocket" class="md-nav__link">
+    Rocket
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openmod_1" class="md-nav__link">
+    OpenMod
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rocket_1" class="md-nav__link">
+    Rocket
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#translations" class="md-nav__link">
+    Translations
+  </a>
+  
+    <nav class="md-nav" aria-label="Translations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openmod_2" class="md-nav__link">
+    OpenMod
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rocket_2" class="md-nav__link">
+    Rocket
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../consumable-rewards/" class="md-nav__link">
+        Consumable Rewards
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dropboxes/" class="md-nav__link">
+        Drop Boxes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hitman/" class="md-nav__link">
+        Hitman
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../movement-modifier/" class="md-nav__link">
+        Movement Modifier
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shops-ui/" class="md-nav__link">
+        Shops UI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vehicle-despawner/" class="md-nav__link">
+        Vehicle Despawner
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../weapon-features/" class="md-nav__link">
+        Weapon Features
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    Commands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permissions" class="md-nav__link">
+    Permissions
+  </a>
+  
+    <nav class="md-nav" aria-label="Permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openmod" class="md-nav__link">
+    OpenMod
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rocket" class="md-nav__link">
+    Rocket
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openmod_1" class="md-nav__link">
+    OpenMod
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rocket_1" class="md-nav__link">
+    Rocket
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#translations" class="md-nav__link">
+    Translations
+  </a>
+  
+    <nav class="md-nav" aria-label="Translations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openmod_2" class="md-nav__link">
+    OpenMod
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rocket_2" class="md-nav__link">
+    Rocket
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="code-locks"><img src="/assets/images/plugins/code-locks/logo.png" width="45" style="vertical-align: bottom;"/> Code Locks</h1>
+<p>Platforms: <strong>OpenMod</strong>, <strong>RocketMod</strong><br />
+Price: <strong>$12 USD</strong><br />
+<strong><a href="https://imperialplugins.com/Unturned/Products/Code-Locks">Buy on Imperial Plugins</a></strong></p>
+<p><strong>Have you ever wanted to secure objects with code locks in Unturned?</strong></p>
+<p>Using this plugin, players can add code locks to doors and storages - providing access to anyone who knows the code.</p>
+<div style="position:relative;padding-top:56.25%;">
+    <iframe src="https://www.youtube.com/embed/gCeqEz9yU8s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+</div>
+
+<p><img alt="Code Locks UI" src="/assets/images/plugins/code-locks/ui.png" /></p>
+<hr />
+<h2 id="usage">Usage</h2>
+<p>Simply lock a door/storage using the <code>/lock &lt;code&gt;</code> command. From here, other players can walk up to the object and attempt to use it. A keypad will pop up prompting for the code. Clicking anywhere on the screen except the keypad will close it.</p>
+<p>By default, each incorrect attempt will deal a bit more damage each time, until the player is killed.</p>
+<hr />
+<h2 id="commands">Commands</h2>
+<ul>
+<li><code>/lock &lt;code&gt;</code> - Adds a code lock to an object, or changes if one already exists.</li>
+<li><code>/unlock</code> - Removes the code lock from an object.</li>
+</ul>
+<hr />
+<h2 id="permissions">Permissions</h2>
+<h3 id="openmod">OpenMod</h3>
+<p>Grant access to the /lock command:
+<div class="highlight"><pre><span></span><code>CodeLocks:commands.lock
+</code></pre></div></p>
+<p>Grant access to the /unlock command:
+<div class="highlight"><pre><span></span><code>CodeLocks:commands.unlock
+</code></pre></div></p>
+<p>Grant the ability to lock/unlock any lockable object
+<div class="highlight"><pre><span></span><code>CodeLocks:bypass
+</code></pre></div></p>
+<h3 id="rocket">Rocket</h3>
+<p>Grant access to the /lock command:
+<div class="highlight"><pre><span></span><code>lock
+</code></pre></div></p>
+<p>Grant access to the /unlock command:
+<div class="highlight"><pre><span></span><code>unlock
+</code></pre></div></p>
+<p>Grant the ability to lock/unlock any lockable object
+<div class="highlight"><pre><span></span><code>bypasslock
+</code></pre></div></p>
+<hr />
+<h2 id="configuration">Configuration</h2>
+<ul>
+<li><strong>Effects</strong> - Effect IDs used by the plugin. Switch success and failure to zero to disable sounds.</li>
+<li><strong>Remember Owner</strong> - Whether or not the owner must enter the code each time.<br />
+<em>Default: true</em></li>
+<li><strong>Remember Users</strong> - Whether or not other users need to enter the code every time.<br />
+<em>Default: true</em></li>
+<li><strong>Non-Owner Can Change Code</strong> - Whether or not users who aren't the owner can change the lock.<br />
+<em>Default: true</em></li>
+<li><strong>Only Owner Can Lock</strong> - Whether or not users who do not own the barricade can lock the barricade.
+  <em>Default: false</em></li>
+<li><strong>Attempts</strong> - Settings related to failed attempts to enter a code.</li>
+<li><strong>Cooldown</strong> - The time (in seconds) before an attempt is 'forgotten'.<br />
+<em>Default: 60 seconds</em></li>
+<li><strong>Damages</strong> - The damage to be dealt at a certain failed attempt.
+    Example: 0, 30, 50, 255
+    Zero damage would be dealt on the first attempt, 30 on the next, the max damage would be dealt on the fourth attempt (and all attempts afterwards).</li>
+</ul>
+<h3 id="openmod_1">OpenMod</h3>
+<details class="note"><summary>Click to reveal default configuration</summary><div class="highlight"><pre><span></span><code><span class="nt">effects</span><span class="p">:</span>
+  <span class="nt">ui</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">29123</span>
+  <span class="nt">success</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">29124</span>
+  <span class="nt">failure</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">29125</span>
+
+<span class="c1"># Whether or not the owner must enter the code each time</span>
+<span class="nt">rememberOwner</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+
+<span class="c1"># Whether or not other users need to enter the code every time</span>
+<span class="nt">rememberUsers</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+
+<span class="c1"># Whether or not users who aren&#39;t the owner can change the lock</span>
+<span class="nt">nonOwnerCanChangeCode</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+
+<span class="c1"># Whether or not users who own the barricade can lock the barricade</span>
+<span class="nt">onlyOwnerCanLock</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+
+<span class="nt">attempts</span><span class="p">:</span>
+  <span class="nt">cooldown</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">60</span> <span class="c1"># Cooldown in seconds</span>
+  <span class="nt">damages</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">0</span> <span class="c1"># Occurs on the first attempt</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">30</span> <span class="c1"># Occurs on the second attempt</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">50</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">255</span> <span class="c1"># Max damage. Occurs on the fourth attempt, and all others</span>
+</code></pre></div>
+</details>
+<h3 id="rocket_1">Rocket</h3>
+<details class="note"><summary>Click to reveal default configuration</summary><div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="nt">&lt;CodeLocksConfiguration</span> <span class="na">xmlns:xsd=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema&quot;</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;RememberOwner&gt;</span>true<span class="nt">&lt;/RememberOwner&gt;</span>
+  <span class="nt">&lt;RememberUsers&gt;</span>true<span class="nt">&lt;/RememberUsers&gt;</span>
+  <span class="nt">&lt;NonOwnerCanChangeCode&gt;</span>true<span class="nt">&lt;/NonOwnerCanChangeCode&gt;</span>
+  <span class="nt">&lt;OnlyOwnerCanLock&gt;</span>false<span class="nt">&lt;/OnlyOwnerCanLock&gt;</span>
+  <span class="nt">&lt;Effects&gt;</span>
+    <span class="nt">&lt;UI&gt;</span>29123<span class="nt">&lt;/UI&gt;</span>
+    <span class="nt">&lt;Success&gt;</span>29124<span class="nt">&lt;/Success&gt;</span>
+    <span class="nt">&lt;Failure&gt;</span>29125<span class="nt">&lt;/Failure&gt;</span>
+  <span class="nt">&lt;/Effects&gt;</span>
+  <span class="nt">&lt;Attempts&gt;</span>
+    <span class="nt">&lt;Cooldown&gt;</span>60<span class="nt">&lt;/Cooldown&gt;</span>
+    <span class="nt">&lt;Damages&gt;</span>
+      <span class="nt">&lt;Damage&gt;</span>0<span class="nt">&lt;/Damage&gt;</span>
+      <span class="nt">&lt;Damage&gt;</span>30<span class="nt">&lt;/Damage&gt;</span>
+      <span class="nt">&lt;Damage&gt;</span>50<span class="nt">&lt;/Damage&gt;</span>
+      <span class="nt">&lt;Damage&gt;</span>255<span class="nt">&lt;/Damage&gt;</span>
+    <span class="nt">&lt;/Damages&gt;</span>
+  <span class="nt">&lt;/Attempts&gt;</span>
+<span class="nt">&lt;/CodeLocksConfiguration&gt;</span>
+</code></pre></div>
+</details>
+<hr />
+<h2 id="translations">Translations</h2>
+<h3 id="openmod_2">OpenMod</h3>
+<details class="note"><summary>Click to reveal default translations</summary><div class="highlight"><pre><span></span><code><span class="nt">commands</span><span class="p">:</span>
+  <span class="nt">codelock</span><span class="p">:</span>
+    <span class="nt">no_lockable_object</span><span class="p">:</span> <span class="s">&quot;You</span><span class="nv"> </span><span class="s">are</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">looking</span><span class="nv"> </span><span class="s">at</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">lockable</span><span class="nv"> </span><span class="s">object.&quot;</span>
+    <span class="nt">invalid_code</span><span class="p">:</span> <span class="s">&quot;The</span><span class="nv"> </span><span class="s">given</span><span class="nv"> </span><span class="s">code</span><span class="nv"> </span><span class="s">({Code})</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">invalid.</span><span class="nv"> </span><span class="s">The</span><span class="nv"> </span><span class="s">code</span><span class="nv"> </span><span class="s">must</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">four</span><span class="nv"> </span><span class="s">numbers</span><span class="nv"> </span><span class="s">(ex.</span><span class="nv"> </span><span class="s">1234).&quot;</span>
+    <span class="nt">code_added</span><span class="p">:</span> <span class="s">&quot;This</span><span class="nv"> </span><span class="s">object</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">locked</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">code</span><span class="nv"> </span><span class="s">{Code}.&quot;</span>
+    <span class="nt">code_changed</span><span class="p">:</span> <span class="s">&quot;This</span><span class="nv"> </span><span class="s">object&#39;s</span><span class="nv"> </span><span class="s">lock</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">changed</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">code</span><span class="nv"> </span><span class="s">{Code}.&quot;</span>
+    <span class="nt">code_removed</span><span class="p">:</span> <span class="s">&quot;This</span><span class="nv"> </span><span class="s">object&#39;s</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">unlocked.&quot;</span>
+    <span class="nt">no_access</span><span class="p">:</span> <span class="s">&quot;You</span><span class="nv"> </span><span class="s">do</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">access</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">set</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">object&#39;s</span><span class="nv"> </span><span class="s">locks.&quot;</span>
+    <span class="nt">no_code</span><span class="p">:</span> <span class="s">&quot;There</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">no</span><span class="nv"> </span><span class="s">code</span><span class="nv"> </span><span class="s">lock</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">object.&quot;</span>
+</code></pre></div>
+</details>
+<h3 id="rocket_2">Rocket</h3>
+<details class="note"><summary>Click to reveal default translations</summary><div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="nt">&lt;Translations</span> <span class="na">xmlns:xsd=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema&quot;</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Translation</span> <span class="na">Id=</span><span class="s">&quot;commands_codelock_help&quot;</span> <span class="na">Value=</span><span class="s">&quot;/lock &amp;lt;code&amp;gt; - Adds a code lock to an object, or changes if one already exists.&quot;</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;Translation</span> <span class="na">Id=</span><span class="s">&quot;invalid_parameters&quot;</span> <span class="na">Value=</span><span class="s">&quot;&amp;lt;color=red&amp;gt;Invalid parameters.&amp;lt;/color=red&amp;gt;&quot;</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;Translation</span> <span class="na">Id=</span><span class="s">&quot;commands_codelock_no_lockable_object&quot;</span> <span class="na">Value=</span><span class="s">&quot;&amp;lt;color=red&amp;gt;You are not looking at a lockable object.&amp;lt;/color&amp;gt;&quot;</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;Translation</span> <span class="na">Id=</span><span class="s">&quot;commands_codelock_invalid_code&quot;</span> <span class="na">Value=</span><span class="s">&quot;&amp;lt;color=red&amp;gt;The given code ({0}) is invalid. The code must be four numbers (ex. 1234).&amp;lt;/color&amp;gt;&quot;</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;Translation</span> <span class="na">Id=</span><span class="s">&quot;commands_codelock_code_added&quot;</span> <span class="na">Value=</span><span class="s">&quot;This object has been locked with the code {0}.&quot;</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;Translation</span> <span class="na">Id=</span><span class="s">&quot;commands_codelock_code_changed&quot;</span> <span class="na">Value=</span><span class="s">&quot;This object&#39;s lock has been changed to the code {0}.&quot;</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;Translation</span> <span class="na">Id=</span><span class="s">&quot;commands_codelock_code_removed&quot;</span> <span class="na">Value=</span><span class="s">&quot;This object&#39;s has been unlocked.&quot;</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;Translation</span> <span class="na">Id=</span><span class="s">&quot;commands_codelock_no_access&quot;</span> <span class="na">Value=</span><span class="s">&quot;&amp;lt;color=red&amp;gt;You do not have access to set this object&#39;s locks.&amp;lt;/color&amp;gt;&quot;</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;Translation</span> <span class="na">Id=</span><span class="s">&quot;commands_codelock_no_code&quot;</span> <span class="na">Value=</span><span class="s">&quot;&amp;lt;color=red&amp;gt;There is no code lock on this object.&amp;lt;/color&amp;gt;&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/Translations&gt;</span>
+</code></pre></div>
+</details>
+<hr />
+<h2 id="installation">Installation</h2>
+<ol>
+<li>
+<p>Specify in your Imperial Plugins config the <code>openmod</code> branch.</p>
+</li>
+<li>
+<p>Add the following workshop ID to your WorkshopDownloadConfig.json file:
+   <div class="highlight"><pre><span></span><code>2407368422
+</code></pre></div></p>
+</li>
+</ol>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Home
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../consumable-rewards/" class="md-footer__link md-footer__link--next" aria-label="Next: Consumable Rewards" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Consumable Rewards
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
+      
+    
+  </body>
+</html>

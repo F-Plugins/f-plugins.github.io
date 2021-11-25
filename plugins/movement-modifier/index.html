@@ -1,0 +1,659 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for SilK's Plugins.">
+      
+      
+      
+        <meta name="author" content="SilK">
+      
+      
+        <link rel="canonical" href="https://docs.silksplugins.com/plugins/movement-modifier/">
+      
+      <link rel="icon" href="../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+    
+    
+      
+        <title>Movement Modifier - SilK's Plugins Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a57b2b03.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#movement-modifier" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="SilK&#39;s Plugins Docs" class="md-header__button md-logo" aria-label="SilK's Plugins Docs" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SilK's Plugins Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Movement Modifier
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SilK&#39;s Plugins Docs" class="md-nav__button md-logo" aria-label="SilK's Plugins Docs" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.png" alt="logo">
+
+    </a>
+    SilK's Plugins Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Paid Plugins
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Paid Plugins" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Paid Plugins
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-locks/" class="md-nav__link">
+        Code Locks
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../consumable-rewards/" class="md-nav__link">
+        Consumable Rewards
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dropboxes/" class="md-nav__link">
+        Drop Boxes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hitman/" class="md-nav__link">
+        Hitman
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Movement Modifier
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Movement Modifier
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openmod" class="md-nav__link">
+    OpenMod
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rocket" class="md-nav__link">
+    Rocket
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shops-ui/" class="md-nav__link">
+        Shops UI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vehicle-despawner/" class="md-nav__link">
+        Vehicle Despawner
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../weapon-features/" class="md-nav__link">
+        Weapon Features
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openmod" class="md-nav__link">
+    OpenMod
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rocket" class="md-nav__link">
+    Rocket
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="movement-modifier"><img src="/assets/images/plugins/movement-modifier/logo.png" width="45" style="vertical-align: bottom;"/> Movement Modifier</h1>
+<p>Platforms: <strong>OpenMod</strong>, <strong>Rocket</strong><br />
+Price: <strong>$5 USD</strong><br />
+<strong><a href="https://imperialplugins.com/Unturned/Products/Movement-Modifier">Buy on Imperial Plugins</a></strong></p>
+<p><strong>Want players to move slower with heavy armor?</strong><br />
+<strong>How about jump higher with certain guns?</strong></p>
+<hr />
+<h2 id="features">Features</h2>
+<p>With Movement Modifier, you can change players' <strong>speeds, gravities, jump heights, and stamina costs</strong> based on which items are in their inventory or are equipped.</p>
+<p>This plugin is <strong>Rocket-reloadable</strong>, allowing on-the-fly changes to its simple configuration.</p>
+<p>Rather than running every frame, this plugin uses events to ensure <strong>zero lag</strong> caused by this plugin.</p>
+<hr />
+<h2 id="configuration">Configuration</h2>
+<p>The configuration has two main sections:</p>
+<ul>
+<li>Global Modifiers - applied to everyone</li>
+<li>Item Modifiers - applied when conditions are met</li>
+</ul>
+<p>All movement modifications in the configuration are based on multipliers.
+Examples:</p>
+<ul>
+<li>Specifying <code>2</code> as a jump modifier will allow the player to jump twice as high.</li>
+<li>Specifying <code>0.5</code> as a speed modifier will half the player's speed.</li>
+</ul>
+<p>By default, all clothing items, guns, melee weapons, tools, and clouds (umbrellas) must be equipped. This can be overrided by stating <code>MustBeEquipped="False"</code>.</p>
+<p>The ID for item modifiers can either be the item name or item ID. If the ID is a number, it will first search for a matching item ID then a name if no item is found.</p>
+<p><strong>Explanation of default config:</strong></p>
+<ul>
+<li>When a player has a Viper equipped, they will run, jump, and fall twice as fast.</li>
+<li>When a player has the Tracksuit Top equipped, they will fall half as fast.</li>
+<li>When a player has an Ace (doesn't need to be equipped), all stamina costs are zero (infinite stamina).</li>
+</ul>
+<h3 id="openmod">OpenMod</h3>
+<details class="note"><summary>Click to reveal default configuration</summary><div class="highlight"><pre><span></span><code><span class="nt">Global</span><span class="p">:</span> <span class="c1"># Global Multipliers</span>
+  <span class="nt">Speed</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+  <span class="nt">Jump</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+  <span class="nt">Gravity</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+  <span class="nt">StaminaCost</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+
+<span class="c1"># Adding a &#39;#&#39; before text comments it out</span>
+<span class="c1"># If the line starts with a &#39;-&#39;, it&#39;s specifying a new item modifier.</span>
+
+<span class="c1"># Here is a run down of how the configuration works:</span>
+
+<span class="c1">#    The id specifies which item this should effect.</span>
+<span class="c1">#    This id can either be the name of the item (i.e. Viper) or the number-based id (i.e. 1027).</span>
+
+<span class="c1"># Every item id is followed by the modifiers. All modifiers are optional and are as follows:</span>
+
+<span class="c1">#    Speed - A speed multiplier (i.e. 2 will make the player move twice as fast)</span>
+<span class="c1">#    Jump - A jump multiplier (i.e. 5 will make the player jump five times higher)</span>
+<span class="c1">#    Gravity - A gravity multiplier (i.e. 0.1 will make the player have very low gravity)</span>
+<span class="c1">#    StaminaCost - A stamina cost multiplier (i.e. 0 will make the player use no stamina)</span>
+
+<span class="c1"># Every item modifier has the optional property &#39;MustBeEquipped&#39; (true/false).</span>
+<span class="c1"># This property specifies whether or not the item must be equipped.</span>
+
+<span class="c1"># By default (if not explicitly set), all clothing items, guns, melee weapons, tools,</span>
+<span class="c1"># and clouds (umbrellas) must be equipped.</span>
+
+<span class="c1"># You can uncomment (remove the &#39;#&#39;) features below to add them to the Viper config</span>
+
+<span class="c1"># The example with the Viper below will increase the player&#39;s speed, jump,</span>
+<span class="c1"># and gravity two times when a Viper is equipped.</span>
+
+<span class="nt">ItemModifiers</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="nt">Id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Viper</span>
+  <span class="nt">Speed</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+  <span class="nt">Jump</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+  <span class="nt">Gravity</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="c1">#  StaminaCost: 0.5</span>
+<span class="c1">#  MustBeEquipped: false</span>
+
+<span class="p p-Indicator">-</span> <span class="nt">Id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Tracksuit Top</span>
+  <span class="nt">Gravity</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0.5</span>
+
+<span class="p p-Indicator">-</span> <span class="nt">Id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Ace</span>
+  <span class="nt">StaminaCost</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0</span>
+  <span class="nt">MustBeEquipped</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+</code></pre></div>
+</details>
+<h3 id="rocket">Rocket</h3>
+<details class="note"><summary>Click to reveal default configuration</summary><div class="highlight"><pre><span></span><code><span class="nt">&lt;GlobalMultipliers&gt;</span>
+  <span class="nt">&lt;Speed&gt;</span>1<span class="nt">&lt;/Speed&gt;</span>
+  <span class="nt">&lt;Jump&gt;</span>1<span class="nt">&lt;/Jump&gt;</span>
+  <span class="nt">&lt;Gravity&gt;</span>1<span class="nt">&lt;/Gravity&gt;</span>
+  <span class="nt">&lt;StaminaCost&gt;</span>1<span class="nt">&lt;/StaminaCost&gt;</span>
+<span class="nt">&lt;/GlobalMultipliers&gt;</span>
+<span class="nt">&lt;ItemModifiers&gt;</span>
+  <span class="nt">&lt;Item</span> <span class="na">ID=</span><span class="s">&quot;Viper&quot;</span> <span class="na">Speed=</span><span class="s">&quot;2&quot;</span> <span class="na">Jump=</span><span class="s">&quot;2&quot;</span> <span class="na">Gravity=</span><span class="s">&quot;2&quot;</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;Item</span> <span class="na">ID=</span><span class="s">&quot;Tracksuit Top&quot;</span> <span class="na">Gravity=</span><span class="s">&quot;0.5&quot;</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;Item</span> <span class="na">ID=</span><span class="s">&quot;Ace&quot;</span> <span class="na">StaminaCost=</span><span class="s">&quot;0&quot;</span> <span class="na">MustBeEquipped=</span><span class="s">&quot;False&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/ItemModifiers&gt;</span>
+</code></pre></div>
+</details>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../hitman/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Hitman" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Hitman
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../shops-ui/" class="md-footer__link md-footer__link--next" aria-label="Next: Shops UI" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Shops UI
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
+      
+    
+  </body>
+</html>

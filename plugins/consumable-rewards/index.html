@@ -1,0 +1,672 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for SilK's Plugins.">
+      
+      
+      
+        <meta name="author" content="SilK">
+      
+      
+        <link rel="canonical" href="https://docs.silksplugins.com/plugins/consumable-rewards/">
+      
+      <link rel="icon" href="../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+    
+    
+      
+        <title>Consumable Rewards - SilK's Plugins Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a57b2b03.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#consumable-rewards" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="SilK&#39;s Plugins Docs" class="md-header__button md-logo" aria-label="SilK's Plugins Docs" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SilK's Plugins Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Consumable Rewards
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SilK&#39;s Plugins Docs" class="md-nav__button md-logo" aria-label="SilK's Plugins Docs" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.png" alt="logo">
+
+    </a>
+    SilK's Plugins Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Paid Plugins
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Paid Plugins" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Paid Plugins
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-locks/" class="md-nav__link">
+        Code Locks
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Consumable Rewards
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Consumable Rewards
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dropboxes/" class="md-nav__link">
+        Drop Boxes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hitman/" class="md-nav__link">
+        Hitman
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../movement-modifier/" class="md-nav__link">
+        Movement Modifier
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shops-ui/" class="md-nav__link">
+        Shops UI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vehicle-despawner/" class="md-nav__link">
+        Vehicle Despawner
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../weapon-features/" class="md-nav__link">
+        Weapon Features
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="consumable-rewards"><img src="/assets/images/plugins/consumable-rewards/logo.png" width="45" style="vertical-align: bottom;"/> Consumable Rewards</h1>
+<p>Platforms: <strong>OpenMod</strong><br />
+Price: <strong>$6 USD</strong><br />
+<strong><a href="https://imperialplugins.com/Unturned/Products/Consumable-Rewards">Buy on Imperial Plugins</a></strong></p>
+<p><strong>Customize what happens when players consume certain items! Let your creativity run wild!</strong></p>
+<p>Using this plugin, you can configure many different occurrences when players consume items. For example, give players metal cans when they eat any canned foods.</p>
+<p>Let your creativity shine here! There are tons of different configurations available for whatever you may need.</p>
+<hr />
+<h2 id="usage">Usage</h2>
+<p>This plugin allows you to configure different rewards/actions to occur whenever a player consumes something. These can even be chance-based!</p>
+<p>All the following rewards/actions are available (feel free to suggest more in <a href="https://silksplugins.com/discord">the Discord server</a>):</p>
+<ul>
+<li>Give the player items.</li>
+<li>Give the player experience.</li>
+<li>Change the player's reputation.</li>
+<li>Give the player a permission role/group.</li>
+<li>Spawn an effect on the player (visible to just the player, or everyone).</li>
+<li>Send the player a message (i.e. <em>Maybe you shouldn't have eaten that...</em>).</li>
+<li>Run a command.</li>
+</ul>
+<p>The plugin's functionality fully relies on the <a href="#Configuration">configuration.</a></p>
+<hr />
+<h2 id="configuration">Configuration</h2>
+<p>The default configuration below contains a guide on how to configure this plugin.</p>
+<p>Feel free to <a href="https://silksplugins.com/discord">ask questions in our Discord server.</a></p>
+<details class="note"><summary>Click to reveal default configuration</summary><div class="highlight"><pre><span></span><code><span class="c1"># Feel free to ask any questions about the config in our Discord server: https://silksplugins.com/discord</span>
+
+<span class="c1"># Each consumable configuration needs either an item or pattern specified.</span>
+<span class="c1"># If you setup the &#39;Item&#39; criteria, the consumable configuration will only apply to that item.</span>
+<span class="c1"># If you setup the &#39;Pattern&#39; criteria, the consumable configuration will apply to any item who&#39;s name matches the given pattern.</span>
+<span class="c1"># The pattern is based on Regular Expressions, but a basic example is is the pattern &#39;Canned&#39; will match any item which has &#39;Canned&#39; in the name.</span>
+<span class="c1"># Read more about regular expressions here: https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference</span>
+
+<span class="c1"># QUICK NOTES:</span>
+<span class="c1"># If something is optional, you can simply remove the line and it will not apply!</span>
+<span class="c1"># Everywhere an item is taken as input, you can either give the name or the ID of the item.</span>
+
+<span class="c1"># Each consumable configuration has some additional optional criteria:</span>
+<span class="c1"># - RequiresPermission - optional - Checks if the player has a specific permission.</span>
+<span class="c1"># - Chance - optional - Only apply these rewards if the player is lucky.</span>
+<span class="c1">#                       Basically if set to 20, there is a 20% chance of these rewards applying.</span>
+<span class="c1"># - RewardLimit - optional - The maximum number of rewards for this consumable that will be given.</span>
+<span class="c1">#                            If not set, the plugin will simply give all the configured rewards.</span>
+<span class="c1"># - Rewards - not optional - The rewards given for this consumable configuration. Explained more next.</span>
+
+<span class="c1"># Each consumable configuration has a list of rewards to give to the player.</span>
+<span class="c1"># There are many different kinds of rewards that can be given:</span>
+<span class="c1"># - GiveItem - Give the player the specified item.</span>
+<span class="c1"># - GiveExperience - Give the player some experience.</span>
+<span class="c1"># - ChangeReputation - Change the player&#39;s reputation (punish those pesky meat-eaters).</span>
+<span class="c1"># - GiveRole - Give the player a permission role.</span>
+<span class="c1"># - ShowEffect - Trigger an effect at this players location.</span>
+<span class="c1">#                If you want this effect to be visible to other players as well,</span>
+<span class="c1">#                set &#39;EffectVisibleToOthers&#39; to true.</span>
+<span class="c1"># - SendMessage - Send the player a message.</span>
+<span class="c1"># - RunCommand - Run a command as the console.</span>
+
+<span class="c1"># Here&#39;s a template will all available configuration options (just remove the #&#39;s):</span>
+<span class="c1">#Consumables:</span>
+<span class="c1">#- Item: ~</span>
+<span class="c1">#  Pattern: ~</span>
+<span class="c1">#  RequiresPermission: ~</span>
+<span class="c1">#  Chance: ~</span>
+<span class="c1">#  RewardLimit: ~</span>
+<span class="c1">#  Rewards:</span>
+<span class="c1">#  - GiveItem: ~</span>
+<span class="c1">#    GiveExperience: ~</span>
+<span class="c1">#    ChangeReputation: ~</span>
+<span class="c1">#    GiveRole: ~</span>
+<span class="c1">#    ShowEffect: ~</span>
+<span class="c1">#    EffectVisibleToOthers: ~</span>
+<span class="c1">#    SendMessage: ~</span>
+<span class="c1">#    RunCommand: ~</span>
+
+<span class="c1"># Here&#39;s an example configuration with comments to help understand:</span>
+<span class="nt">Consumables</span><span class="p">:</span>
+<span class="c1"># Starting off with a basic consumable configuration, let&#39;s tell the player they shouldn&#39;t have eaten glue.</span>
+<span class="p p-Indicator">-</span> <span class="nt">Item</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Glue</span>
+  <span class="nt">Rewards</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">GiveExperience</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span> <span class="c1"># Let&#39;s give them something at least.</span>
+    <span class="nt">SendMessage</span><span class="p">:</span> <span class="s">&quot;You</span><span class="nv"> </span><span class="s">probably</span><span class="nv"> </span><span class="s">shouldn&#39;t</span><span class="nv"> </span><span class="s">do</span><span class="nv"> </span><span class="s">that</span><span class="nv"> </span><span class="s">{User.DisplayName}.&quot;</span>
+
+<span class="c1"># We can make multiple messages be available, but only one show like this:</span>
+<span class="p p-Indicator">-</span> <span class="nt">Item</span><span class="p">:</span> <span class="s">&quot;Glue&quot;</span>
+  <span class="c1"># By limiting the reward to 1, only one message will show.</span>
+  <span class="c1"># The chances of the messages will decide which is shown.</span>
+  <span class="nt">RewardLimit</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+  <span class="nt">Rewards</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">SendMessage</span><span class="p">:</span> <span class="s">&quot;Why</span><span class="nv"> </span><span class="s">did</span><span class="nv"> </span><span class="s">you</span><span class="nv"> </span><span class="s">do</span><span class="nv"> </span><span class="s">that?&quot;</span>
+    <span class="nt">Chance</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">20</span>
+  <span class="p p-Indicator">-</span> <span class="nt">SendMessage</span><span class="p">:</span> <span class="s">&quot;You</span><span class="nv"> </span><span class="s">probably</span><span class="nv"> </span><span class="s">shouldn&#39;t</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">drank</span><span class="nv"> </span><span class="s">that...&quot;</span>
+    <span class="nt">Chance</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">25</span>
+  <span class="p p-Indicator">-</span> <span class="nt">SendMessage</span><span class="p">:</span> <span class="s">&quot;Welp.&quot;</span>
+    <span class="nt">Chance</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">33.3</span>
+  <span class="p p-Indicator">-</span> <span class="nt">SendMessage</span><span class="p">:</span> <span class="s">&quot;Here</span><span class="nv"> </span><span class="s">we</span><span class="nv"> </span><span class="s">go</span><span class="nv"> </span><span class="s">again.&quot;</span>
+    <span class="nt">Chance</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">50</span>
+  <span class="p p-Indicator">-</span> <span class="nt">SendMessage</span><span class="p">:</span> <span class="s">&quot;Hopefully</span><span class="nv"> </span><span class="s">natural</span><span class="nv"> </span><span class="s">selection</span><span class="nv"> </span><span class="s">works</span><span class="nv"> </span><span class="s">:/&quot;</span>
+    <span class="nt">Chance</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">100</span> <span class="c1"># Same as setting no chance.</span>
+
+<span class="c1"># Here we&#39;ll use the pattern to give the player an empty can whenever the eat/drink something canned:</span>
+<span class="p p-Indicator">-</span> <span class="nt">Pattern</span><span class="p">:</span> <span class="s">&quot;Canned&quot;</span>
+  <span class="nt">Rewards</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">GiveItem</span><span class="p">:</span> <span class="s">&quot;Metal</span><span class="nv"> </span><span class="s">Can&quot;</span>
+
+<span class="c1"># Just for another example, let&#39;s lower the player&#39;s reputation when they eat venison (vegetarian server):</span>
+<span class="p p-Indicator">-</span> <span class="nt">Pattern</span><span class="p">:</span> <span class="s">&quot;Venison&quot;</span>
+  <span class="nt">Rewards</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">ChangeReputation</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">-5</span>
+
+<span class="c1"># Just for fun, let&#39;s grant the player VIP if they get REALLY lucky eating a certain berry, and kill them sometimes too:</span>
+<span class="p p-Indicator">-</span> <span class="nt">Item</span><span class="p">:</span> <span class="s">&quot;Raw</span><span class="nv"> </span><span class="s">Amber</span><span class="nv"> </span><span class="s">Berry&quot;</span>
+  <span class="nt">RewardLimit</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span> <span class="c1"># Only allow one reward to occur so if they get the role, they don&#39;t also die.</span>
+  <span class="nt">Rewards</span><span class="p">:</span>
+  <span class="c1"># Give the player VIP (1% chance)</span>
+  <span class="p p-Indicator">-</span> <span class="nt">GiveRole</span><span class="p">:</span> <span class="s">&quot;vip&quot;</span>
+    <span class="nt">SendMessage</span><span class="p">:</span> <span class="s">&quot;Congratulations!</span><span class="nv"> </span><span class="s">You</span><span class="nv"> </span><span class="s">defied</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">odds,</span><span class="nv"> </span><span class="s">got</span><span class="nv"> </span><span class="s">VIP,</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">didn&#39;t</span><span class="nv"> </span><span class="s">die!&quot;</span>
+    <span class="nt">Chance</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span> <span class="c1"># 1% chance</span>
+  <span class="c1"># Kill and ban the player using a command</span>
+  <span class="p p-Indicator">-</span> <span class="nt">RunCommand</span><span class="p">:</span> <span class="s">&quot;slay</span><span class="nv"> </span><span class="s">{User.SteamId}&quot;</span>
+    <span class="nt">Chance</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">10</span> <span class="c1"># 10% chance</span>
+</code></pre></div>
+</details>
+<hr />
+<h2 id="installation">Installation</h2>
+<ol>
+<li>
+<p>Run the following command to install necessary libraries:
+  <div class="highlight"><pre><span></span><code>openmod install SilK.Unturned.Extras
+</code></pre></div></p>
+</li>
+<li>
+<p>Specify the <code>openmod</code> branch in your Imperial Plugins config.</p>
+</li>
+</ol>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../code-locks/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Code Locks" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Code Locks
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../dropboxes/" class="md-footer__link md-footer__link--next" aria-label="Next: Drop Boxes" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Drop Boxes
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
+      
+    
+  </body>
+</html>

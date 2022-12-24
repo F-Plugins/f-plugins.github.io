@@ -16,7 +16,7 @@ Let your creativity shine here! There are tons of different configurations avail
 
 This plugin allows you to configure different rewards/actions to occur whenever a player consumes something. These can even be chance-based!
 
-All the following rewards/actions are available (feel free to suggest more in [the Discord server](https://silksplugins.com/discord)):
+All the following rewards/actions are available (feel free to suggest more in [the Discord server](https://discord.gg/bNMKHPa)):
 
 - Give the player items.
 - Give the player experience.

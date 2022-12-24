@@ -23,7 +23,7 @@ The full list of features are:
 - Heal the weapon holder when they kill a player
 - Drain a player's stamina when damaged
 
-**More features can be requested - recommend them in [my Discord server](https://silksplugins.com/discord)**
+**More features can be requested - recommend them in [my Discord server](https://discord.gg/bNMKHPa)**
 
 All of these features can be based on chance. Allowing you to use many features on the same weapon without making it overpowered.
 

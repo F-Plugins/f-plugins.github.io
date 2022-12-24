@@ -1,7 +1,7 @@
-site_name: SilK's Plugins Docs
-site_description: Documentation for SilK's Plugins.
-site_author: SilK
-site_url: https://docs.silksplugins.com/
+site_name: FPlugins Docs
+site_description: Documentation for FPlugins plugins.
+site_author: "SilK. Modified by: Feli"
+site_url: https://docs.fplugins.com/
 
 nav:
 - Home: index.md

@@ -1,8 +1,8 @@
-# Welcome to the SilK's Plugins Documentation
+# Welcome to the FPlugins Documentation
 
-Both my free and paid plugins are documented here.
+Here you can find usefull information about all the plugins FPlugins has on imperialplugins.com
 
-If you have any questions, want to recommend features, or need some support, [join my plugin discord](https://silksplugins.com/discord).
+If you have any questions, want to recommend features, or need some support, [join my plugin discord](https://discord.gg/bNMKHPa).
 
 ## Paid Plugins
 

@@ -29,7 +29,7 @@ Price: **FREE**
       initial_balance: 100
     ```
 
-??? note Click to reveal default translations
+??? note "Click to reveal default translations"
     ```yaml
     commands:
       success: 

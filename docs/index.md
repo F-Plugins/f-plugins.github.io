@@ -4,6 +4,11 @@ Here you can find usefull information about all the plugins FPlugins has on impe
 
 If you have any questions, want to recommend features, or need some support, [join my plugin discord](https://discord.gg/bNMKHPa).
 
+## Free Plugins
+
+<img src="/assets/images/plugins/economy/logo.png" width="30" style="vertical-align: bottom;margin-right: 0.25em; border-radius: 50%"/> [Economy](/plugins/economy/) -
+Unturned economy plugin that supports xp and balance.
+
 ## Paid Plugins
 
 <img src="/assets/images/plugins/code-locks/logo.png" width="30" style="vertical-align: bottom;margin-right: 0.25em;"/> [Code Locks](/plugins/code-locks/) -

@@ -4,25 +4,27 @@ site_author: "SilK. Modified by: Feli"
 site_url: https://docs.fplugins.com/
 
 nav:
-- Home: index.md
-- Paid Plugins:
-  - Code Locks: plugins/code-locks.md
-  - Consumable Rewards: plugins/consumable-rewards.md
-  - Drop Boxes: plugins/dropboxes.md
-  - Hitman: plugins/hitman.md
-  - Movement Modifier: plugins/movement-modifier.md
-  - Shops UI: plugins/shops-ui.md
-  - Vehicle Despawner: plugins/vehicle-despawner.md
-  - Weapon Features: plugins/weapon-features.md
+  - Home: index.md
+  - Free Plugins:
+      - Economy: plugins/economy.md
+  - Paid Plugins:
+      - Code Locks: plugins/code-locks.md
+      - Consumable Rewards: plugins/consumable-rewards.md
+      - Drop Boxes: plugins/dropboxes.md
+      - Hitman: plugins/hitman.md
+      - Movement Modifier: plugins/movement-modifier.md
+      - Shops UI: plugins/shops-ui.md
+      - Vehicle Despawner: plugins/vehicle-despawner.md
+      - Weapon Features: plugins/weapon-features.md
 
 markdown_extensions:
-- pymdownx.details
-- pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.superfences
 
 theme:
   name: material
-  
+
   favicon: assets/images/favicon.ico
   logo: assets/images/logo.png
-  
+
   include_homepage_in_sidebar: false

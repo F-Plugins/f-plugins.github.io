@@ -1,4 +1,4 @@
-# <img src="/assets/images/plugins/economy/logo.png" width="45" style="vertical-align: bottom; border-radius: 50%"/> Drop Boxes
+# <img src="/assets/images/plugins/economy/logo.png" width="45" style="vertical-align: bottom; border-radius: 50%"/> Economy
 
 Platforms: **OpenMod**  
 Price: **FREE**  

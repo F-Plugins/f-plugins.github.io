@@ -22,15 +22,15 @@ Price: **FREE**
 ## Configuration
 
 ??? note "Click to reveal default configuration"
-`yaml
+    ```yaml
     economy:
       use_xp: true
       allow_setting_negative_balance: false
       initial_balance: 100
-    `
+    ```
 
 ??? note Click to reveal default translations
-`yaml
+    ```yaml
     commands:
     success: 
       balance_display: "You have {CurrencySymbol}{Balance} {CurrencyName}"
@@ -53,7 +53,7 @@ Price: **FREE**
       symbol: "$"
     errors:
       not_enough_balance: "You don't have enough balance to pay {CurrencySymbol}{Amount}. Balance: {CurrencySymbol}{Balance}"
-    `
+    ```
 
 ## Installation
 

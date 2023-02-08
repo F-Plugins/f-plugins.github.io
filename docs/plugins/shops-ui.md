@@ -321,7 +321,7 @@ Balance: "<color=#0000FF>{CurrencySymbol}{Balance:0.00}</color>"
   openmod install SilK.Unturned.Extras
   ```
 
-2. Specify the openmod branch in your Imperial Plugins config.
+2. Specify the testing branch in your Imperial Plugins config.
 
 3. Add the following workshop id to your WorkshopDownloadConfig.json file:
   ```

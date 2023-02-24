@@ -57,9 +57,12 @@ Price: **FREE**
 
 ## Installation
 
+Execute `openmod install Feli.Economy` with this you install the base plugin. To complete the installation install the Database type you want, you can see them below this.
+
 To install the plugin you have to choose between 2 database types MySql which requires a MySql server to run or LiteDB which works with BSON so you don't have to install anything else than the plugin.
 
 Execute the command according to the database type you want.
 
 MySql: `openmod install Feli.Economy.MySql`
+
 LiteDB: `openmod install Feli.Economy.LiteDB`

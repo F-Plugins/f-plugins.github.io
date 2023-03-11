@@ -320,6 +320,9 @@ Balance: "<color=#0000FF>{CurrencySymbol}{Balance:0.00}</color>"
   ```
   openmod install SilK.Unturned.Extras
   ```
+  ```
+  openmod install Silk.UnturnedImages
+  ```
 
 2. Specify the testing branch in your Imperial Plugins config.
 

@@ -41,7 +41,7 @@ StatsSystem:commands.stats.toggle
 
 ## Configuration
 ??? note "Click to reveal default configuration"
-    ```
+    ```yaml
     Database:
       ConnectionStrings:
         Default: "Server=127.0.0.1; Database=openmod; Port=3306; User=root; Password=admin"
@@ -95,7 +95,7 @@ StatsSystem:commands.stats.toggle
 
 ## Translations
 ??? note "Click to reveal default translations"
-    ```
+    ```yaml
     # Stats parameters:
     # - Kills
     # - Deaths

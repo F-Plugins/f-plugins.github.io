@@ -8,6 +8,7 @@ nav:
   - Free Plugins:
       - Economy: plugins/economy.md
   - Paid Plugins:
+      - Stats System: plugins/stats-system.md
       - Code Locks: plugins/code-locks.md
       - Consumable Rewards: plugins/consumable-rewards.md
       - Drop Boxes: plugins/dropboxes.md

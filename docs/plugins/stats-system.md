@@ -5,7 +5,7 @@ Price: **$25 USD**
 **[Buy on Imperial Plugins](https://imperialplugins.com/Unturned/Products/Stats-System)**
 
 **Adds Player Stats and Rankings to your server**
-**Tracking of player stats such as Kills, Deaths, Accurracy, Kills Deaths Ratio and more**
+**Tracking of player stats such as Kills, Deaths, Accuracy, Kills Deaths Ratio and more**
 
 **Optional customizable and localizable UI**
 

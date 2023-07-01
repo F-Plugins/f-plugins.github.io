@@ -5,6 +5,7 @@ Price: **$9.99 USD**
 **[Buy on Imperial Plugins](https://imperialplugins.com/Unturned/Products/PlayerRobbing)**
 
 **Simple system using one command and a virtual storage for stealing the items**
+
 **When a player rob someone you can configure to send a message to police members**
 
 ---

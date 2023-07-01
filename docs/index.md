@@ -14,6 +14,9 @@ Unturned economy plugin that supports xp and balance.
 <img src="/assets/images/plugins/stats-system/logo.png" width="30" style="vertical-align: bottom;margin-right: 0.25em;"/> [Stats System](/plugins/stats-system/) -
 Tracking of player stats such as Kills, Deaths, Accuracy, Kills Deaths Ratio and more.
 
+<img src="/assets/images/plugins/player-robbing/logo.png" width="30" style="vertical-align: bottom;margin-right: 0.25em;"/> [Player Robbing](/plugins/player-robbing/) -
+Allows your users to steal items from other people inventories without having to ask them to drop everything
+
 <img src="/assets/images/plugins/code-locks/logo.png" width="30" style="vertical-align: bottom;margin-right: 0.25em;"/> [Code Locks](/plugins/code-locks/) -
 A plugin which adds code locks to doors/storages.
 

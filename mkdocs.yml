@@ -7,6 +7,7 @@ nav:
   - Home: index.md
   - Free Plugins:
       - Economy: plugins/economy.md
+      - Salary: plugins/salary.md
       - Country Restrictor: plugins/country-restrictor.md
   - Paid Plugins:
       - Stats System: plugins/stats-system.md

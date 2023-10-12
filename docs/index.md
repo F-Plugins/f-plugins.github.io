@@ -9,6 +9,9 @@ If you have any questions, want to recommend features, or need some support, [jo
 <img src="/assets/images/plugins/economy/logo.png" width="30" style="vertical-align: bottom;margin-right: 0.25em; border-radius: 50%"/> [Economy](/plugins/economy/) -
 Unturned economy plugin that supports xp and balance.
 
+<img src="/assets/images/plugins/salary/logo.png" width="30" style="vertical-align: bottom;margin-right: 0.25em; border-radius: 50%"/> [Salary](/plugins/salary/) -
+Easy to use openmod salary plugin.
+
 <img src="/assets/images/plugins/country-restrictor/logo.png" width="30" style="vertical-align: bottom;margin-right: 0.25em; border-radius: 50%"/> [Country Restrictor](/plugins/country-restrictor/) -
 Restrict server access based on player countries.
 

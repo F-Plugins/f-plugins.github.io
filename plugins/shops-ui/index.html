@@ -1,0 +1,1180 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for FPlugins plugins.">
+      
+      
+        <meta name="author" content="SilK. Modified by: Feli">
+      
+      
+        <link rel="canonical" href="https://f-plugins.github.io/plugins/shops-ui/">
+      
+      
+        <link rel="prev" href="../movement-modifier/">
+      
+      
+        <link rel="next" href="../vehicle-despawner/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Shops UI - FPlugins Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#shops-ui" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="FPlugins Docs" class="md-header__button md-logo" aria-label="FPlugins Docs" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FPlugins Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Shops UI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="FPlugins Docs" class="md-nav__button md-logo" aria-label="FPlugins Docs" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.png" alt="logo">
+
+    </a>
+    FPlugins Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Free Plugins
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Free Plugins
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../economy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Economy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../salary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Salary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../country-restrictor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Country Restrictor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Paid Plugins
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Paid Plugins
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stats-system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stats System
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../player-robbing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Player Robbing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-locks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code Locks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../consumable-rewards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Consumable Rewards
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dropboxes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drop Boxes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hitman/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hitman
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../movement-modifier/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Movement Modifier
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Shops UI
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Shops UI
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#migration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sellbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sellbox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permissions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-user-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic User Permissions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#administrative-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Administrative Permissions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#translations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Translations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vehicle-despawner/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vehicle Despawner
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../weapon-features/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Weapon Features
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#migration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sellbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sellbox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permissions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-user-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic User Permissions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#administrative-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Administrative Permissions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#translations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Translations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="shops-ui"><img src="/assets/images/plugins/shops-ui/logo.png" width="45" style="vertical-align: bottom;"/> Shops UI</h1>
+<p>Platforms: <strong>OpenMod</strong><br />
+Price: <strong>$15 USD</strong><br />
+<strong><a href="https://imperialplugins.com/Unturned/Products/Shops-UI">Buy on Imperial Plugins</a></strong></p>
+<p><strong>Have you ever wanted your shops to be accessible through a UI?</strong></p>
+<p>Using this plugin, players can buy and sell items and vehicles in your server's shop easily!</p>
+<p>Easily migrate from your existing ZaupShops installation using the migration command. See more in the <strong>Migration</strong> section.</p>
+<div style="position:relative;padding-top:56.25%;">
+    <iframe src="https://www.youtube.com/embed/nnrGGdkRCa4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+</div>
+
+<p><img alt="Shops UI Example" src="/assets/images/plugins/shops-ui/ui.png" /></p>
+<hr />
+<h2 id="usage">Usage</h2>
+<p>Players can simply use /shop (or /vshop to directly access the vehicle shop).
+See the media on this page to view an example of the UI.</p>
+<p>At the moment, commands must be used to configure the shop. More info on configuring the shops can be found in the <strong>Commands</strong> section.</p>
+<p>Shop whitelists/blacklists are supported. The permission you specify in the commands for setup are not exact however. If you put <code>eaglefire</code> as the whitelist permission, the actual permission would be <code>ShopsUI:groups.eaglefire</code>. The permission you specify has <code>ShopsUI:groups.</code> added to the front.</p>
+<hr />
+<h2 id="migration">Migration</h2>
+<p>If you wish to migrate from ZaupShops, you can simply run the command <code>/shop migrate</code>.</p>
+<p>If you used whitelists and blacklists with ZaupShop, you must also change some of your permissions. All existing permissions starting with <code>zaupgroups.</code> must be changed to start with <code>ShopsUI:groups.</code>.
+For example, the following permissions show their original and their migrated permissions:</p>
+<ul>
+<li><code>zaupgroup.epicguns</code> &#8594; <code>ShopsUI:groups.epicguns</code>  </li>
+<li><code>zaupgroup.vip</code> &#8594; <code>ShopsUI:groups.vip</code>  </li>
+<li><code>zaupgroup.mvp</code> &#8594; <code>ShopsUI:groups.mvp</code>  </li>
+</ul>
+<hr />
+<h2 id="commands">Commands</h2>
+<p><strong>Commands for UI:</strong></p>
+<ul>
+<li>/shop - Opens the shop UI.</li>
+<li>/vshop - Opens the shop UI directly to the vehicle tab.</li>
+</ul>
+<p><strong>Commands for shop management:</strong></p>
+<p>Basic commands:</p>
+<ul>
+<li><code>/shop add &lt;buy | sell&gt; &lt;item&gt; &lt;price&gt;</code> - Adds the item to the shop to be bought or sold.</li>
+<li><code>/shop remove &lt;buy | sell&gt; &lt;item&gt;</code> - Removes the buyable/sellable item from the shop.</li>
+<li><code>/vshop add &lt;vehicle&gt; &lt;price&gt;</code> - Adds the vehicle to the shop to be bought.</li>
+<li><code>/vshop remove &lt;vehicle&gt;</code> - Removes the buyable vehicle from the shop.</li>
+<li><code>/shop reload</code> - Reloads the shops from the database.</li>
+<li><code>/sellbox</code> - Opens a virtual storage for selling items.</li>
+</ul>
+<p>UI-related management commands:</p>
+<ul>
+<li><code>/shop order &lt;item&gt; &lt;order&gt;</code> - Sets the order of items in the shop UI.</li>
+<li><code>/vshop order &lt;vehicles&gt; &lt;order&gt;</code> - Sets the order of vehicles in the shop UI.</li>
+</ul>
+<p>Whitelist/blacklist commands:</p>
+<ul>
+<li><code>/shop whitelist &lt;add | rem&gt; &lt;item&gt; &lt;permission&gt;</code> - Manage item shop whitelists.</li>
+<li><code>/shop blacklist &lt;add | rem&gt; &lt;item&gt; &lt;permission&gt;</code> - Manage item shop blacklists.</li>
+<li><code>/vshop whitelist &lt;add | rem&gt; &lt;vehicle&gt; &lt;permission&gt;</code> - Manage vehicle shop whitelists.</li>
+<li><code>/vshop blacklist &lt;add | rem&gt; &lt;vehicle&gt; &lt;permission&gt;</code> - Manage vehicle shop blacklists.</li>
+</ul>
+<p>The permission you specify has <code>ShopsUI:groups.</code> added to the front of it. <code>abc</code> turns into <code>ShopsUI:groups.abc</code>.</p>
+<p><strong>Alternative buy/sell commands:</strong></p>
+<ul>
+<li><code>/buy &lt;item&gt; [amount]</code> - Buys the item from the shop.</li>
+<li><code>/sell &lt;item&gt; [amount]</code> - Sells the item to the shop.</li>
+<li><code>/vbuy &lt;vehicle&gt;</code> - Buys the vehicle from the shop.</li>
+</ul>
+<hr />
+<h2 id="sellbox">Sellbox</h2>
+<p>The <code>/sellbox</code> command feature allows players to quickly sell items by placing them in a virtual storage.</p>
+<p>The default sellbox size is configurable in the <code>config.yaml</code> file.</p>
+<p>To set sell box sizes for certain permission roles, simply add the following lines below the <code>data</code> entry of a role (change width and height to what you'd like).</p>
+<div class="highlight"><pre><span></span><code><span class="nt">sellbox</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">width</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8</span>
+<span class="w">  </span><span class="nt">height</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">12</span>
+</code></pre></div>
+<details class="note">
+<summary>Click to reveal an example using the default OpenMod permissions file</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">roles</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span>
+<span class="w">  </span><span class="nt">parents</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span>
+<span class="w">  </span><span class="nt">permissions</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">OpenMod.Core:help</span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Default</span>
+<span class="w">  </span><span class="nt">data</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">sellbox</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">width</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6</span>
+<span class="w">      </span><span class="nt">height</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8</span>
+<span class="w">  </span><span class="nt">isAutoAssigned</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vip</span>
+<span class="w">  </span><span class="nt">priority</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">  </span><span class="nt">parents</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span>
+<span class="w">  </span><span class="nt">permissions</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SomeKitsPlugin:kits.vip</span>
+<span class="w">  </span><span class="nt">data</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">sellbox</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">width</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
+<span class="w">      </span><span class="nt">height</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">12</span>
+</code></pre></div>
+</details>
+<hr />
+<h2 id="permissions">Permissions</h2>
+<h3 id="basic-user-permissions">Basic User Permissions</h3>
+<p>Grant access to the <code>/buy</code> command:
+<div class="highlight"><pre><span></span><code>ShopsUI:commands.buy
+</code></pre></div></p>
+<p>Grant access to the <code>/cost</code> command:
+<div class="highlight"><pre><span></span><code>ShopsUI:commands.cost
+</code></pre></div></p>
+<p>Grant access to the <code>/sell</code> command:
+<div class="highlight"><pre><span></span><code>ShopsUI:commands.sell
+</code></pre></div></p>
+<p>Grant access to the <code>/shop</code> command to see the shop UI:
+<div class="highlight"><pre><span></span><code>ShopsUI:commands.shop
+</code></pre></div></p>
+<p>Grant access to the <code>/vshop</code> command to directly navigate to vehicle shops in the UI:
+<div class="highlight"><pre><span></span><code>ShopsUI:commands.vshop
+</code></pre></div></p>
+<h3 id="administrative-permissions">Administrative Permissions</h3>
+<p>Grant access to manage item shops:
+<div class="highlight"><pre><span></span><code>ShopsUI:commands.shop.*
+</code></pre></div></p>
+<p>Grant access to manage vehicle shops:
+<div class="highlight"><pre><span></span><code>ShopsUI:commands.vshop.*
+</code></pre></div></p>
+<hr />
+<h2 id="configuration">Configuration</h2>
+<details class="note">
+<summary>Click to reveal default configuration</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">database</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">ConnectionStrings</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Server=127.0.0.1;</span><span class="nv"> </span><span class="s">Database=openmod;</span><span class="nv"> </span><span class="s">Port=3306;</span><span class="nv"> </span><span class="s">User=unturned;</span><span class="nv"> </span><span class="s">Password=password&quot;</span>
+
+<span class="nt">shops</span><span class="p">:</span>
+<span class="w">  </span><span class="c1"># Blacklists allow all players to access a given shop</span>
+<span class="w">  </span><span class="c1"># unless they have a configured blacklisted permission.</span>
+<span class="w">  </span><span class="c1"># When this setting is set to true, shop blacklists will not be ignored.</span>
+<span class="w">  </span><span class="nt">blacklistEnabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+
+<span class="w">  </span><span class="c1"># Whitelists allow only the players who have a configured</span>
+<span class="w">  </span><span class="c1"># whitelisted permission to access a given shop.</span>
+<span class="w">  </span><span class="c1"># When this setting is set to true, shop whitelists will not be ignored.</span>
+<span class="w">  </span><span class="nt">whitelistEnabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+
+<span class="nt">sellbox</span><span class="p">:</span><span class="w"> </span><span class="c1"># Default sellbox size. Set either to zero to disable by default.</span>
+<span class="w">  </span><span class="nt">width</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8</span>
+<span class="w">  </span><span class="nt">height</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6</span>
+
+<span class="nt">ui</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">logoUrl</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;https://i.imgur.com/t6HbFTN.png&quot;</span>
+<span class="w">  </span><span class="nt">mainEffect</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">29150</span>
+</code></pre></div>
+</details>
+<hr />
+<h2 id="translations">Translations</h2>
+<p>You can change the color of both UI and command text translations by using <a href="https://docs.unity3d.com/560/Documentation/Manual/StyledText.html">Unity's rich text format</a>.</p>
+<p>For example, to change the balance color to blue in the UI, change:
+<div class="highlight"><pre><span></span><code><span class="nt">Balance</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">CurrencySymbol</span><span class="p p-Indicator">}{</span><span class="nv">Balance</span><span class="p p-Indicator">:</span><span class="nv">0.00</span><span class="p p-Indicator">}</span>
+</code></pre></div>
+to
+<div class="highlight"><pre><span></span><code><span class="nt">Balance</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&lt;color=blue&gt;{CurrencySymbol}{Balance:0.00}&lt;/color&gt;&quot;</span>
+</code></pre></div>
+or
+<div class="highlight"><pre><span></span><code><span class="nt">Balance</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&lt;color=#0000FF&gt;{CurrencySymbol}{Balance:0.00}&lt;/color&gt;&quot;</span>
+</code></pre></div></p>
+<details class="note">
+<summary>Click to reveal default translations</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">commands</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">success</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">shop_reloaded</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Shops</span><span class="nv"> </span><span class="s">successfully</span><span class="nv"> </span><span class="s">reloaded.&quot;</span>
+<span class="w">    </span><span class="nt">shop_added</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">buyable_item</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;The</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">{ItemAsset.ItemName}</span><span class="nv"> </span><span class="s">can</span><span class="nv"> </span><span class="s">now</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">bought</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">{CurrencySymbol}{Price:0.00}.&quot;</span>
+<span class="w">      </span><span class="nt">sellable_item</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;The</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">{ItemAsset.ItemName}</span><span class="nv"> </span><span class="s">can</span><span class="nv"> </span><span class="s">now</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">sold</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">{CurrencySymbol}{Price:0.00}.&quot;</span>
+<span class="w">      </span><span class="nt">buyable_vehicle</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;The</span><span class="nv"> </span><span class="s">vehicle</span><span class="nv"> </span><span class="s">{VehicleAsset.VehicleName}</span><span class="nv"> </span><span class="s">can</span><span class="nv"> </span><span class="s">now</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">bought</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">{CurrencySymbol}{Price:0.00}.&quot;</span>
+<span class="w">    </span><span class="nt">shop_removed</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">buyable_item</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;The</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">{ItemAsset.ItemName}</span><span class="nv"> </span><span class="s">can</span><span class="nv"> </span><span class="s">no</span><span class="nv"> </span><span class="s">longer</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">bought.&quot;</span>
+<span class="w">      </span><span class="nt">sellable_item</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;The</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">{ItemAsset.ItemName}</span><span class="nv"> </span><span class="s">can</span><span class="nv"> </span><span class="s">no</span><span class="nv"> </span><span class="s">longer</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">sold.&quot;</span>
+<span class="w">      </span><span class="nt">buyable_vehicle</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;The</span><span class="nv"> </span><span class="s">vehicle</span><span class="nv"> </span><span class="s">{VehicleAsset.VehicleName}</span><span class="nv"> </span><span class="s">can</span><span class="nv"> </span><span class="s">no</span><span class="nv"> </span><span class="s">longer</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">sold.&quot;</span>
+<span class="w">    </span><span class="nt">item_bought</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;You</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">bought</span><span class="nv"> </span><span class="s">x{Amount}</span><span class="nv"> </span><span class="s">{ItemAsset.ItemName}</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">{CurrencySymbol}{Price:0.00}.</span><span class="nv"> </span><span class="s">Your</span><span class="nv"> </span><span class="s">balance</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">now</span><span class="nv"> </span><span class="s">{CurrencySymbol}{Balance:0.00}.&quot;</span>
+<span class="w">    </span><span class="nt">item_sold</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;You</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">sold</span><span class="nv"> </span><span class="s">x{Amount}</span><span class="nv"> </span><span class="s">{ItemAsset.ItemName}</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">{CurrencySymbol}{Price:0.00}.</span><span class="nv"> </span><span class="s">Your</span><span class="nv"> </span><span class="s">balance</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">now</span><span class="nv"> </span><span class="s">{CurrencySymbol}{Balance:0.00}.&quot;</span>
+<span class="w">    </span><span class="nt">vehicle_bought</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;You</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">bought</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">{ItemAsset.ItemName}</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">{CurrencySymbol}{Price:0.00}.</span><span class="nv"> </span><span class="s">Your</span><span class="nv"> </span><span class="s">balance</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">now</span><span class="nv"> </span><span class="s">{CurrencySymbol}{Balance:0.00}.&quot;</span>
+<span class="w">    </span><span class="nt">item_cost</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">buy</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;You</span><span class="nv"> </span><span class="s">can</span><span class="nv"> </span><span class="s">buy</span><span class="nv"> </span><span class="s">x{Amount}</span><span class="nv"> </span><span class="s">{ItemAsset.ItemName}</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">{CurrencySymbol}{BuyPrice:0.00}.&quot;</span>
+<span class="w">      </span><span class="nt">sell</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;You</span><span class="nv"> </span><span class="s">can</span><span class="nv"> </span><span class="s">sell</span><span class="nv"> </span><span class="s">x{Amount}</span><span class="nv"> </span><span class="s">{ItemAsset.ItemName}</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">{CurrencySymbol}{SellPrice:0.00}.&quot;</span>
+<span class="w">      </span><span class="nt">buy_and_sell</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;You</span><span class="nv"> </span><span class="s">can</span><span class="nv"> </span><span class="s">buy</span><span class="nv"> </span><span class="s">x{Amount}</span><span class="nv"> </span><span class="s">{ItemAsset.ItemName}</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">{CurrencySymbol}{BuyPrice:0.00}</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">sell</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">{CurrencySymbol}{SellPrice:0.00}.&quot;</span>
+<span class="w">    </span><span class="nt">vehicle_cost</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">buy</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;You</span><span class="nv"> </span><span class="s">can</span><span class="nv"> </span><span class="s">buy</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">{VehicleAsset.VehicleName}</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">{CurrencySymbol}{BuyPrice:0.00}.&quot;</span>
+<span class="w">    </span><span class="nt">shop_order</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">item</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Successfuly</span><span class="nv"> </span><span class="s">set</span><span class="nv"> </span><span class="s">order</span><span class="nv"> </span><span class="s">value</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">{ItemAsset.ItemName}</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">{Order}.&quot;</span>
+<span class="w">      </span><span class="nt">vehicle</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Successfuly</span><span class="nv"> </span><span class="s">set</span><span class="nv"> </span><span class="s">order</span><span class="nv"> </span><span class="s">value</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">{VehicleAsset.VehicleName}</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">{Order}.&quot;</span>
+<span class="w">    </span><span class="nt">shop_whitelist</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">added</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">item</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Successfully</span><span class="nv"> </span><span class="s">added</span><span class="nv"> </span><span class="s">whitelist</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">{ItemAsset.ItemAssetId}</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">permission</span><span class="nv"> </span><span class="s">{Permission}.&quot;</span>
+<span class="w">        </span><span class="nt">vehicle</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Successfully</span><span class="nv"> </span><span class="s">added</span><span class="nv"> </span><span class="s">whitelist</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">vehicle</span><span class="nv"> </span><span class="s">{VehicleAsset.VehicleAssetId}</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">permission</span><span class="nv"> </span><span class="s">{Permission}.&quot;</span>
+<span class="w">      </span><span class="nt">removed</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">item</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Successfully</span><span class="nv"> </span><span class="s">removed</span><span class="nv"> </span><span class="s">whitelist</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">{ItemAsset.ItemAssetId}</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">permission</span><span class="nv"> </span><span class="s">{Permission}.&quot;</span>
+<span class="w">        </span><span class="nt">vehicle</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Successfully</span><span class="nv"> </span><span class="s">removed</span><span class="nv"> </span><span class="s">whitelist</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">vehicle</span><span class="nv"> </span><span class="s">{VehicleAsset.VehicleAssetId}</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">permission</span><span class="nv"> </span><span class="s">{Permission}.&quot;</span>
+<span class="w">    </span><span class="nt">shop_blacklist</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">added</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">item</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Successfully</span><span class="nv"> </span><span class="s">added</span><span class="nv"> </span><span class="s">blacklist</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">{ItemAsset.ItemAssetId}</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">permission</span><span class="nv"> </span><span class="s">{Permission}.&quot;</span>
+<span class="w">        </span><span class="nt">vehicle</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Successfully</span><span class="nv"> </span><span class="s">added</span><span class="nv"> </span><span class="s">blacklist</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">vehicle</span><span class="nv"> </span><span class="s">{VehicleAsset.VehicleAssetId}</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">permission</span><span class="nv"> </span><span class="s">{Permission}.&quot;</span>
+<span class="w">      </span><span class="nt">removed</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">item</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Successfully</span><span class="nv"> </span><span class="s">removed</span><span class="nv"> </span><span class="s">blacklist</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">{ItemAsset.ItemAssetId}</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">permission</span><span class="nv"> </span><span class="s">{Permission}.&quot;</span>
+<span class="w">        </span><span class="nt">vehicle</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Successfully</span><span class="nv"> </span><span class="s">removed</span><span class="nv"> </span><span class="s">blacklist</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">vehicle</span><span class="nv"> </span><span class="s">{VehicleAsset.VehicleAssetId}</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">permission</span><span class="nv"> </span><span class="s">{Permission}.&quot;</span>
+<span class="w">    </span><span class="nt">sellbox_sold</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;You</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">sold</span><span class="nv"> </span><span class="s">{TotalAmount}</span><span class="nv"> </span><span class="s">items</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">{CurrencySymbol}{TotalPrice:0.00}.</span><span class="nv"> </span><span class="s">{ReturnedAmount}</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">returned</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">you.&quot;</span>
+
+<span class="w">  </span><span class="nt">errors</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">invalid_item_id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Given</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">id</span><span class="nv"> </span><span class="s">({IdOrName})</span><span class="nv"> </span><span class="s">does</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">exist.&quot;</span>
+<span class="w">    </span><span class="nt">invalid_vehicle_id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Given</span><span class="nv"> </span><span class="s">vehicle</span><span class="nv"> </span><span class="s">id</span><span class="nv"> </span><span class="s">({IdOrName})</span><span class="nv"> </span><span class="s">does</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">exist.&quot;</span>
+<span class="w">    </span><span class="nt">invalid_price</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Given</span><span class="nv"> </span><span class="s">price</span><span class="nv"> </span><span class="s">({Price:0.00})</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">greater</span><span class="nv"> </span><span class="s">than</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">equal</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">zero.&quot;</span>
+<span class="w">    </span><span class="nt">invalid_amount</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Given</span><span class="nv"> </span><span class="s">amount</span><span class="nv"> </span><span class="s">({Amount})</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">greater</span><span class="nv"> </span><span class="s">than</span><span class="nv"> </span><span class="s">one.&quot;</span>
+<span class="w">    </span><span class="nt">not_enough_items</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;You</span><span class="nv"> </span><span class="s">do</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">enough</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">item.&quot;</span>
+<span class="w">    </span><span class="nt">no_item_shop</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;No</span><span class="nv"> </span><span class="s">shop</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">{ItemAsset.ItemName}</span><span class="nv"> </span><span class="s">exists.&quot;</span>
+<span class="w">    </span><span class="nt">no_buyable_item_shop</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;The</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">{ItemAsset.ItemName}</span><span class="nv"> </span><span class="s">cannot</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">bought.&quot;</span>
+<span class="w">    </span><span class="nt">no_sellable_item_shop</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;The</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">{ItemAsset.ItemName}</span><span class="nv"> </span><span class="s">cannot</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">sold.&quot;</span>
+<span class="w">    </span><span class="nt">no_vehicle_shop</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;No</span><span class="nv"> </span><span class="s">shop</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">{VehicleAsset.VehicleName}</span><span class="nv"> </span><span class="s">exists.&quot;</span>
+<span class="w">    </span><span class="nt">no_buyable_vehicle_shop</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;The</span><span class="nv"> </span><span class="s">vehicle</span><span class="nv"> </span><span class="s">{VehicleAsset.VehicleName}</span><span class="nv"> </span><span class="s">cannot</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">bought.&quot;</span>
+<span class="w">    </span><span class="nt">not_permitted_item</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;You</span><span class="nv"> </span><span class="s">are</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">permitted</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">buy/sell</span><span class="nv"> </span><span class="s">{ItemAsset.ItemName}.&quot;</span>
+<span class="w">    </span><span class="nt">not_permitted_vehicle</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;You</span><span class="nv"> </span><span class="s">are</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">permitted</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">buy</span><span class="nv"> </span><span class="s">{VehicleAsset.VehicleName}.&quot;</span>
+<span class="w">    </span><span class="nt">no_sellbox</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;You</span><span class="nv"> </span><span class="s">cannot</span><span class="nv"> </span><span class="s">use</span><span class="nv"> </span><span class="s">/sellbox.&quot;</span>
+<span class="w">    </span><span class="nt">shop_whitelist</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">added</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">item</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;A</span><span class="nv"> </span><span class="s">whitelist</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">could</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">added.</span><span class="nv"> </span><span class="s">This</span><span class="nv"> </span><span class="s">shop</span><span class="nv"> </span><span class="s">may</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">exist</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">whitelist</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">already</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">added.&quot;</span>
+<span class="w">        </span><span class="nt">vehicle</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;A</span><span class="nv"> </span><span class="s">whitelist</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">vehicle</span><span class="nv"> </span><span class="s">could</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">added.</span><span class="nv"> </span><span class="s">This</span><span class="nv"> </span><span class="s">shop</span><span class="nv"> </span><span class="s">may</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">exist</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">whitelist</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">already</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">added.&quot;</span>
+<span class="w">      </span><span class="nt">removed</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">item</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;A</span><span class="nv"> </span><span class="s">whitelist</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">could</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">removed.</span><span class="nv"> </span><span class="s">This</span><span class="nv"> </span><span class="s">shop</span><span class="nv"> </span><span class="s">may</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">exist</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">whitelist</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">already</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">removed.&quot;</span>
+<span class="w">        </span><span class="nt">vehicle</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;A</span><span class="nv"> </span><span class="s">whitelist</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">vehicle</span><span class="nv"> </span><span class="s">could</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">removed.</span><span class="nv"> </span><span class="s">This</span><span class="nv"> </span><span class="s">shop</span><span class="nv"> </span><span class="s">may</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">exist</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">whitelist</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">already</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">removed.&quot;</span>
+<span class="w">    </span><span class="nt">shop_blacklist</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">added</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">item</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;A</span><span class="nv"> </span><span class="s">blacklist</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">could</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">added.</span><span class="nv"> </span><span class="s">This</span><span class="nv"> </span><span class="s">shop</span><span class="nv"> </span><span class="s">may</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">exist</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">blacklist</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">already</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">added.&quot;</span>
+<span class="w">        </span><span class="nt">vehicle</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;A</span><span class="nv"> </span><span class="s">blacklist</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">vehicle</span><span class="nv"> </span><span class="s">could</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">added.</span><span class="nv"> </span><span class="s">This</span><span class="nv"> </span><span class="s">shop</span><span class="nv"> </span><span class="s">may</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">exist</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">blacklist</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">already</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">added.&quot;</span>
+<span class="w">      </span><span class="nt">removed</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">item</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;A</span><span class="nv"> </span><span class="s">blacklist</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">could</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">removed.</span><span class="nv"> </span><span class="s">This</span><span class="nv"> </span><span class="s">shop</span><span class="nv"> </span><span class="s">may</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">exist</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">blacklist</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">already</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">removed.&quot;</span>
+<span class="w">        </span><span class="nt">vehicle</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;A</span><span class="nv"> </span><span class="s">blacklist</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">vehicle</span><span class="nv"> </span><span class="s">could</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">removed.</span><span class="nv"> </span><span class="s">This</span><span class="nv"> </span><span class="s">shop</span><span class="nv"> </span><span class="s">may</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">exist</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">blacklist</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">already</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">removed.&quot;</span>
+
+<span class="nt">transactions</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">items</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">bought</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Purchased</span><span class="nv"> </span><span class="s">{Amount}</span><span class="nv"> </span><span class="s">{ItemAsset.ItemName}</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">{CurrencySymbol}{Price:0.##}&quot;</span>
+<span class="w">    </span><span class="nt">sold</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Sold</span><span class="nv"> </span><span class="s">{Amount}</span><span class="nv"> </span><span class="s">{ItemAsset.ItemName}</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">{CurrencySymbol}{Price:0.##}&quot;</span>
+<span class="w">  </span><span class="nt">vehicles</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">bought</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Purchased</span><span class="nv"> </span><span class="s">{VehicleAsset.VehicleName}</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">{CurrencySymbol}{Price:0.##}&quot;</span>
+
+<span class="nt">ui</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">header</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Shops&quot;</span>
+<span class="w">  </span><span class="nt">balance</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Balance:</span><span class="nv"> </span><span class="s">{CurrencySymbol}{Balance:0.00}&quot;</span>
+<span class="w">  </span><span class="nt">items</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">header</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Items&quot;</span>
+<span class="w">    </span><span class="nt">listing</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">content</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{ItemAsset.ItemName}&quot;</span>
+<span class="w">      </span><span class="nt">buy</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Buy</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">{CurrencySymbol}{BuyPrice:0.##}&quot;</span>
+<span class="w">      </span><span class="nt">sell</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Sell</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">{CurrencySymbol}{SellPrice:0.##}&quot;</span>
+<span class="w">    </span><span class="nt">bought</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Successfully</span><span class="nv"> </span><span class="s">purchased.&quot;</span>
+<span class="w">    </span><span class="nt">sold</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Successfully</span><span class="nv"> </span><span class="s">sold.&quot;</span>
+<span class="w">    </span><span class="nt">not_permitted</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;You</span><span class="nv"> </span><span class="s">are</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">permitted</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">do</span><span class="nv"> </span><span class="s">this.&quot;</span>
+<span class="w">  </span><span class="nt">vehicles</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">header</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Vehicles&quot;</span>
+<span class="w">    </span><span class="nt">listing</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">content</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{VehicleAsset.VehicleName}&quot;</span>
+<span class="w">      </span><span class="nt">buy</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Buy</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">{CurrencySymbol}{BuyPrice:0.##}&quot;</span>
+<span class="w">    </span><span class="nt">not_permitted</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;You</span><span class="nv"> </span><span class="s">are</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">permitted</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">do</span><span class="nv"> </span><span class="s">this.&quot;</span>
+</code></pre></div>
+</details>
+<hr />
+<h2 id="installation">Installation</h2>
+<ol>
+<li>
+<p>Run the following commands to install necessary libraries:
+  <div class="highlight"><pre><span></span><code>openmod install OpenMod.EntityFrameworkCore.MySql
+</code></pre></div>
+  <div class="highlight"><pre><span></span><code>openmod install SilK.Unturned.Extras
+</code></pre></div>
+  <div class="highlight"><pre><span></span><code>openmod install Silk.UnturnedImages
+</code></pre></div></p>
+</li>
+<li>
+<p>Specify the testing branch in your Imperial Plugins config.</p>
+</li>
+<li>
+<p>Add the following workshop id to your WorkshopDownloadConfig.json file:
+  <div class="highlight"><pre><span></span><code>2412328215
+</code></pre></div></p>
+</li>
+<li>
+<p>Change the connection string in your new <code>ShopsUI/config.yaml</code> file to allow ShopsUI to connect to your MySQL server.</p>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>

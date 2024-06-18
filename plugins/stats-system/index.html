@@ -1,0 +1,933 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for FPlugins plugins.">
+      
+      
+        <meta name="author" content="SilK. Modified by: Feli">
+      
+      
+        <link rel="canonical" href="https://f-plugins.github.io/plugins/stats-system/">
+      
+      
+        <link rel="prev" href="../country-restrictor/">
+      
+      
+        <link rel="next" href="../player-robbing/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Stats System - FPlugins Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#stats-system" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="FPlugins Docs" class="md-header__button md-logo" aria-label="FPlugins Docs" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FPlugins Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Stats System
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="FPlugins Docs" class="md-nav__button md-logo" aria-label="FPlugins Docs" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.png" alt="logo">
+
+    </a>
+    FPlugins Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Free Plugins
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Free Plugins
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../economy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Economy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../salary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Salary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../country-restrictor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Country Restrictor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Paid Plugins
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Paid Plugins
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Stats System
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Stats System
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permissions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#translations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Translations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../player-robbing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Player Robbing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-locks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code Locks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../consumable-rewards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Consumable Rewards
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dropboxes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drop Boxes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hitman/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hitman
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../movement-modifier/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Movement Modifier
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shops-ui/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shops UI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vehicle-despawner/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vehicle Despawner
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../weapon-features/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Weapon Features
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permissions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#translations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Translations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="stats-system"><img src="/assets/images/plugins/stats-system/logo.png" width="45" style="vertical-align: bottom;"/> Stats System</h1>
+<p>Platforms: <strong>OpenMod</strong><br />
+Price: <strong>$25 USD</strong><br />
+<strong><a href="https://imperialplugins.com/Unturned/Products/Stats-System">Buy on Imperial Plugins</a></strong></p>
+<p><strong>Adds Player Stats and Rankings to your server</strong>
+<strong>Tracking of player stats such as Kills, Deaths, Accuracy, Kills Deaths Ratio and more</strong></p>
+<p><strong>Optional customizable and localizable UI</strong></p>
+<p><img alt="UI" src="https://i.imgur.com/7vNgT60.png" /></p>
+<p><strong>Real time customizable and localizable discord leaderboard</strong></p>
+<p><img alt="Discord Leaderboard" src="https://i.imgur.com/bZ7EyFT.png" /></p>
+<hr />
+<h2 id="commands">Commands</h2>
+<ul>
+<li><code>/stats</code> - Shows your stats.</li>
+<li><code>/stats &lt;player name&gt;</code> - Shows other player stats.</li>
+<li><code>/stats toggle</code> - Hides or Shows the UI.</li>
+</ul>
+<hr />
+<h2 id="permissions">Permissions</h2>
+<p>Grant access to the <code>/stats</code> command:
+<div class="highlight"><pre><span></span><code>StatsSystem:commands.stats
+</code></pre></div></p>
+<p>Grant access to the <code>/stats toggle</code> command:
+<div class="highlight"><pre><span></span><code>StatsSystem:commands.stats.toggle
+</code></pre></div></p>
+<hr />
+<h2 id="configuration">Configuration</h2>
+<details class="note">
+<summary>Click to reveal default configuration</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">Database</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">ConnectionStrings</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">Default</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Server=127.0.0.1;</span><span class="nv"> </span><span class="s">Database=openmod;</span><span class="nv"> </span><span class="s">Port=3306;</span><span class="nv"> </span><span class="s">User=root;</span><span class="nv"> </span><span class="s">Password=admin&quot;</span>
+
+<span class="nt">MessageIconUrl</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
+
+<span class="nt">Join</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">Message</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+
+<span class="nt">Rewards</span><span class="p">:</span><span class="w"> </span><span class="c1"># Type can be: Kills, Headshots and Deaths</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Kills&quot;</span>
+<span class="w">    </span><span class="nt">Amount</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">    </span><span class="nt">Commands</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;om</span><span class="nv"> </span><span class="s">r</span><span class="nv"> </span><span class="s">add</span><span class="nv"> </span><span class="s">p</span><span class="nv"> </span><span class="s">{Id}</span><span class="nv"> </span><span class="s">noob&quot;</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Deaths&quot;</span>
+<span class="w">    </span><span class="nt">Amount</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<span class="w">    </span><span class="nt">Commands</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;kick</span><span class="nv"> </span><span class="s">{DisplayName}&quot;</span><span class="w"> </span><span class="c1"># Can be any command you want and will be executed when Amount is reached</span>
+
+<span class="nt">StatsUI</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">Enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">EffectId</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">55322</span>
+<span class="w">  </span><span class="nt">Data</span><span class="p">:</span><span class="w"> </span><span class="c1"># You can add up to 10 different displays. You can safely remove or add any of this the UI will only show the ones listed here in the given order</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Rank&quot;</span>
+<span class="w">      </span><span class="nt">Display</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&lt;color=cyan&gt;Rank&lt;/color&gt;</span><span class="nv"> </span><span class="s">#{Value}&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Kills&quot;</span>
+<span class="w">      </span><span class="nt">Display</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&lt;color=red&gt;Kills&lt;/color&gt;</span><span class="nv"> </span><span class="s">{Value}&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Deaths&quot;</span>
+<span class="w">      </span><span class="nt">Display</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&lt;color=blue&gt;Deaths&lt;/color&gt;</span><span class="nv"> </span><span class="s">{Value}&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;KDR&quot;</span>
+<span class="w">      </span><span class="nt">Display</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&lt;color=lime&gt;KDR&lt;/color&gt;</span><span class="nv"> </span><span class="s">{Value}&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Headshots&quot;</span>
+<span class="w">      </span><span class="nt">Display</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&lt;color=yellow&gt;Headshots&lt;/color&gt;</span><span class="nv"> </span><span class="s">{Value}&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Accuracy&quot;</span>
+<span class="w">      </span><span class="nt">Display</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&lt;color=green&gt;Accuracy&lt;/color&gt;</span><span class="nv"> </span><span class="s">{Value}%&quot;</span>
+
+<span class="w">  </span><span class="c1"># Extra Possible display types:</span>
+<span class="w">  </span><span class="c1"># - Zombies</span>
+<span class="w">  </span><span class="c1"># - MegaZombies</span>
+<span class="w">  </span><span class="c1"># - Animals</span>
+<span class="w">  </span><span class="c1"># - Fishes</span>
+<span class="w">  </span><span class="c1"># - Plants </span>
+<span class="w">  </span><span class="c1"># - Resources</span>
+
+<span class="nt">DiscordLeaderboard</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">Enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="nt">BotToken</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
+<span class="w">  </span><span class="nt">ChannelId</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+</code></pre></div>
+</details>
+<hr />
+<h2 id="translations">Translations</h2>
+<details class="note">
+<summary>Click to reveal default translations</summary>
+<div class="highlight"><pre><span></span><code><span class="c1"># Stats parameters:</span>
+<span class="c1"># - Kills</span>
+<span class="c1"># - Deaths</span>
+<span class="c1"># - KillsDeathRatio </span>
+<span class="c1"># - HeadshotKills</span>
+<span class="c1"># - Accuracy (Based on headshot kills)</span>
+<span class="c1"># - Zombies</span>
+<span class="c1"># - MegaZombies</span>
+<span class="c1"># - Animals</span>
+<span class="c1"># - Fishes</span>
+<span class="c1"># - Plants</span>
+<span class="c1"># - Resources</span>
+
+<span class="nt">commands</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">success</span><span class="p">:</span><span class="w"> </span>
+<span class="w">    </span><span class="nt">stats</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{DisplayName}</span><span class="nv"> </span><span class="s">Rank:</span><span class="nv"> </span><span class="s">#{Rank}\nKills:</span><span class="nv"> </span><span class="s">{Stats.Kills}</span><span class="nv"> </span><span class="s">Deaths:</span><span class="nv"> </span><span class="s">{Stats.Deaths}</span><span class="nv"> </span><span class="s">KDR:</span><span class="nv"> </span><span class="s">{Stats.KillsDeathRatio}&quot;</span><span class="w"> </span><span class="c1"># Supports rich text</span>
+<span class="w">  </span><span class="nt">errors</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">not_available</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;UI</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">available&quot;</span>
+
+<span class="nt">events</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">join</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{DisplayName}</span><span class="nv"> </span><span class="s">ranked</span><span class="nv"> </span><span class="s">#{Rank}</span><span class="nv"> </span><span class="s">connected&quot;</span><span class="w"> </span><span class="c1"># Supports rich text</span>
+
+<span class="nt">discord</span><span class="p">:</span><span class="w"> </span><span class="c1"># For title and description: {ServerName} {ServerIp} {ServerPort}</span>
+<span class="w">  </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Leaderboard&quot;</span><span class="w"> </span>
+<span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{ServerName}&quot;</span>
+<span class="w">  </span><span class="nt">field</span><span class="p">:</span><span class="w"> </span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;#</span><span class="nv"> </span><span class="s">{Rank}</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">{DisplayName}</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">{Id}&quot;</span>
+<span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{Stats.Kills}</span><span class="nv"> </span><span class="s">Kills</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">{Stats.Deaths}</span><span class="nv"> </span><span class="s">Deaths</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">{Stats.KillsDeathRatio:N2}</span><span class="nv"> </span><span class="s">KDR</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">{Accuracy}%</span><span class="nv"> </span><span class="s">Accuracy&quot;</span><span class="w"> </span><span class="c1"># Any stat parameter</span>
+</code></pre></div>
+</details>
+<hr />
+<h2 id="installation">Installation</h2>
+<ol>
+<li>
+<p>Run the following commands to install necessary libraries:
+  <div class="highlight"><pre><span></span><code>openmod install OpenMod.EntityFrameworkCore.MySql
+</code></pre></div>
+  <div class="highlight"><pre><span></span><code>openmod install Dapper
+</code></pre></div>
+  <div class="highlight"><pre><span></span><code>openmod install SilK.Unturned.Extras
+</code></pre></div>
+  <div class="highlight"><pre><span></span><code>openmod install DSharpPlus.Rest
+</code></pre></div></p>
+</li>
+<li>
+<p>Specify the openmod branch in your Imperial Plugins config.</p>
+</li>
+<li>
+<p>Add the following workshop id to your WorkshopDownloadConfig.json file:
+  <div class="highlight"><pre><span></span><code>2948787992
+</code></pre></div></p>
+</li>
+<li>
+<p>Change the connection string in your new <code>StatsSystem/config.yaml</code> file to allow StatsSystem to connect to your MySQL server.</p>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>

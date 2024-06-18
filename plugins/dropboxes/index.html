@@ -1,0 +1,1028 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for FPlugins plugins.">
+      
+      
+        <meta name="author" content="SilK. Modified by: Feli">
+      
+      
+        <link rel="canonical" href="https://f-plugins.github.io/plugins/dropboxes/">
+      
+      
+        <link rel="prev" href="../consumable-rewards/">
+      
+      
+        <link rel="next" href="../hitman/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Drop Boxes - FPlugins Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#drop-boxes" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="FPlugins Docs" class="md-header__button md-logo" aria-label="FPlugins Docs" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FPlugins Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Drop Boxes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="FPlugins Docs" class="md-nav__button md-logo" aria-label="FPlugins Docs" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.png" alt="logo">
+
+    </a>
+    FPlugins Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Free Plugins
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Free Plugins
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../economy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Economy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../salary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Salary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../country-restrictor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Country Restrictor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Paid Plugins
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Paid Plugins
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stats-system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stats System
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../player-robbing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Player Robbing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-locks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code Locks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../consumable-rewards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Consumable Rewards
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Drop Boxes
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Drop Boxes
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permissions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-user-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic User Permissions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#administrative-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Administrative Permissions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#translations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Translations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hitman/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hitman
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../movement-modifier/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Movement Modifier
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shops-ui/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shops UI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vehicle-despawner/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vehicle Despawner
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../weapon-features/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Weapon Features
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permissions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-user-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic User Permissions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#administrative-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Administrative Permissions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#translations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Translations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="drop-boxes"><img src="/assets/images/plugins/dropboxes/logo.png" width="45" style="vertical-align: bottom;"/> Drop Boxes</h1>
+<p>Platforms: <strong>OpenMod</strong><br />
+Price: <strong>$15 USD</strong><br />
+<strong><a href="https://imperialplugins.com/Unturned/Products/DropBoxes">Buy on Imperial Plugins</a></strong></p>
+<p><strong>Add loot boxes to your server!</strong></p>
+<p>Using this plugin, players can find or be given loot boxes which contain rewards you configure.</p>
+<p><strong>UI support coming soon!</strong></p>
+<hr />
+<h2 id="usage">Usage</h2>
+<p>Players can naturally find these loot boxes by doing a range of normal activities in the game. Check out the <a href="#configuration">Configuration</a> section for more details.</p>
+<p>Loot boxes can also be directly given to players for use in donation systems and other custom applications.</p>
+<hr />
+<h2 id="commands">Commands</h2>
+<ul>
+<li>
+<p><code>/unbox &lt;box&gt;</code> - Unbox a loot box.
+  Requires the <code>DropBoxes:commands.unbox</code> permission.</p>
+</li>
+<li>
+<p><code>/boxes</code> - View your loot boxes.
+  Requires the <code>DropBoxes:commands.boxes</code> permission.</p>
+</li>
+<li>
+<p><code>/givebox &lt;player&gt; &lt;box&gt;</code> - Give an online player a loot box.
+  Requires the <code>DropBoxes:commands.givebox</code> permission.</p>
+</li>
+<li>
+<p><code>/giveboxbyid &lt;steam id&gt; &lt;box&gt;</code> - Give the player with the steam ID a loot box.
+  Requires the <code>DropBoxes:commands.giveboxbyid</code> permission.</p>
+</li>
+</ul>
+<hr />
+<h2 id="permissions">Permissions</h2>
+<h3 id="basic-user-permissions">Basic User Permissions</h3>
+<p>Grant access to the <code>/unbox</code> command:
+<div class="highlight"><pre><span></span><code>DropBoxes:commands.unbox
+</code></pre></div></p>
+<p>Grant access to the <code>/boxes</code> command:
+<div class="highlight"><pre><span></span><code>DropBoxes:commands.boxes
+</code></pre></div></p>
+<h3 id="administrative-permissions">Administrative Permissions</h3>
+<p>Grant access to the <code>/givebox</code> command:
+<div class="highlight"><pre><span></span><code>DropBoxes:commands.givebox
+</code></pre></div></p>
+<p>Grant access to the <code>/giveboxbyid</code> command:
+<div class="highlight"><pre><span></span><code>DropBoxes:commands.giveboxbyid
+</code></pre></div></p>
+<hr />
+<h2 id="configuration">Configuration</h2>
+<details class="note">
+<summary>Click to reveal default configuration</summary>
+<div class="highlight"><pre><span></span><code><span class="c1"># Each loot box has a configuration.</span>
+<span class="c1"># BoxId - The unique id for this loot box. Used for storing in the database.</span>
+<span class="c1"># Name - The display name for this loot box. This is displayed to the user.</span>
+<span class="c1"># Permission - The permission needed for naturally receiving this loot box. Naturally refers</span>
+<span class="c1">#   to receiving via one of the chances below. Players without this permission can still</span>
+<span class="c1">#   receive via the /givebox command and can open previously acquired loot boxes.</span>
+<span class="c1">#   ** This setting is optional, you can remove this line in the config.</span>
+<span class="c1"># Chances - The chances related to finding this loot box.</span>
+<span class="c1">#   PlayerKill - The chance a player will receive this loot box when killing a player.</span>
+<span class="c1">#   ZombieKill - The chance a player will receive this loot box when killing a zombie.</span>
+<span class="c1">#   MegaZombieKill - The chance a player will receive this loot box when killing a mega zombie.</span>
+<span class="c1">#   AnimalKill - The chance a player will receive this loot box when killing an animal.</span>
+<span class="c1">#   HarvestPlant - The chance a player will receive this loot box when harvesting a plant.</span>
+<span class="c1">#   HarvestResource - The chance a player will receive this loot box when finishing harvesting a resource.</span>
+<span class="c1"># Rewards - The rewards possibly given when finding this loot box.</span>
+<span class="c1">#   Only one reward will be given to the player. The reward is chosen based on the</span>
+<span class="c1">#   configured weights of each reward. Three items with weights of 2, 4, and 8 all</span>
+<span class="c1">#   have the same chances as if their weights were 20, 40, and 80 instead.</span>
+<span class="c1">#   Item - The id or name of the reward item. If this is a number, it will search for the id first.</span>
+<span class="c1">#   Weight - The weighting this reward has as described above.</span>
+
+<span class="nt">database</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">ConnectionStrings</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Server=127.0.0.1;</span><span class="nv"> </span><span class="s">Port=3306;</span><span class="nv"> </span><span class="s">Database=openmod;</span><span class="nv"> </span><span class="s">User=unturned;</span><span class="nv"> </span><span class="s">Password=password&quot;</span>
+
+<span class="nt">LootBoxes</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">BoxId</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">common</span>
+<span class="w">  </span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Common Box</span>
+<span class="w">  </span><span class="nt">Chances</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">PlayerKill</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">40</span><span class="w"> </span><span class="c1"># 40% chance to get this loot box on player kill</span>
+<span class="w">    </span><span class="nt">ZombieKill</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">20</span><span class="w"> </span><span class="c1"># 20% chance to get this loot box on zombie kill</span>
+<span class="w">    </span><span class="nt">MegaZombieKill</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">70</span><span class="w"> </span><span class="c1"># 70% chance to get this loot box on mega zombie kill</span>
+<span class="w">    </span><span class="nt">AnimalKill</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">20</span><span class="w"> </span><span class="c1"># 20% chance to get this loot box on animal kill</span>
+<span class="w">    </span><span class="nt">HarvestPlant</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span><span class="w"> </span><span class="c1"># 0% chance to get this loot box on plant harvest</span>
+<span class="w">                    </span><span class="c1"># You can also omit this line for a 0% chance</span>
+<span class="w">    </span><span class="nt">HarvestResource</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span><span class="w"> </span><span class="c1"># 5% chance to get this loot box when harvesting</span>
+<span class="w">  </span><span class="nt">Rewards</span><span class="p">:</span><span class="w"> </span><span class="c1"># One item will always drop as a reward</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Item</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Canned Beans</span><span class="w"> </span><span class="c1"># You can also specify the id of the item instead of the name</span>
+<span class="w">    </span><span class="nt">Weight</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Item</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Glue</span>
+<span class="w">    </span><span class="nt">Weight</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span><span class="w"> </span><span class="c1"># As Canned Beans has a weight of 5 and Glue has a weight of 10,</span>
+<span class="w">              </span><span class="c1"># Glue has twice the chance as Canned Beans to be the reward.</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Item</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">16</span><span class="w"> </span><span class="c1"># Camp Axe</span>
+<span class="w">    </span><span class="nt">Weight</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">BoxId</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rarebox</span>
+<span class="w">  </span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Rare Box</span>
+<span class="w">  </span><span class="c1"># When setting a permission, the player must have this permission</span>
+<span class="w">  </span><span class="c1"># in order to naturally receive this loot box. The loot box can still</span>
+<span class="w">  </span><span class="c1"># be opened if they already own it, or if granted with /givebox.</span>
+<span class="w">  </span><span class="nt">Permission</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">boxes.rarebox</span><span class="w"> </span><span class="c1"># The actual permission will be DropBoxes:boxes.rarebox</span>
+<span class="w">  </span><span class="nt">Chances</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">PlayerKill</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">15</span><span class="w"> </span><span class="c1"># 15% chance</span>
+<span class="w">    </span><span class="nt">MegaZombieKill</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span><span class="w"> </span><span class="c1"># 10% chance</span>
+<span class="w">  </span><span class="nt">Rewards</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Item</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Cobra</span>
+<span class="w">    </span><span class="nt">Weight</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Item</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Colt</span>
+<span class="w">    </span><span class="nt">Weight</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">20</span><span class="w"> </span><span class="c1"># Again, as the weight of the Colt is double that of the Cobra,</span>
+<span class="w">              </span><span class="c1"># it has twice the chance as the Cobra to be the reward</span>
+
+<span class="c1"># Here&#39;s a loot box config without any comments</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">BoxId</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">epicbox</span>
+<span class="w">  </span><span class="nt">Name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Epic Box</span>
+<span class="w">  </span><span class="nt">Permission</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">boxes.epicbox</span>
+<span class="w">  </span><span class="nt">Chances</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">PlayerKill</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
+<span class="w">    </span><span class="nt">ZombieKill</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="w">    </span><span class="nt">MegaZombieKill</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="w">    </span><span class="nt">AnimalKill</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="w">    </span><span class="nt">HarvestPlant</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">HarvestResource</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.5</span>
+<span class="w">  </span><span class="nt">Rewards</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Item</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Grizzly</span>
+<span class="w">    </span><span class="nt">Weight</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Item</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Maplestrike</span>
+<span class="w">    </span><span class="nt">Weight</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Item</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Eaglefire</span>
+<span class="w">    </span><span class="nt">Weight</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8</span>
+</code></pre></div>
+</details>
+<hr />
+<h2 id="translations">Translations</h2>
+<details class="note">
+<summary>Click to reveal default translations</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">Natural</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">FoundLootBox</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;You</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">found</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">{LootBox.Name}!&quot;</span>
+
+<span class="nt">Commands</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">Success</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">LootBoxes</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{LootBoxes.Count:cond:!=0?Available</span><span class="nv"> </span><span class="s">loot</span><span class="nv"> </span><span class="s">boxes:</span><span class="nv"> </span><span class="s">{LootBoxes:x{Amount}</span><span class="nv"> </span><span class="s">{Name}|,</span><span class="nv"> </span><span class="s">|,</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">}|No</span><span class="nv"> </span><span class="s">loot</span><span class="nv"> </span><span class="s">boxes</span><span class="nv"> </span><span class="s">available.}&quot;</span>
+<span class="w">    </span><span class="nt">Unbox</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;You</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">unboxed</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">{Item.Asset.ItemName}</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">your</span><span class="nv"> </span><span class="s">{LootBox.Name}!&quot;</span>
+<span class="w">    </span><span class="nt">GiveBox</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;You</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">given</span><span class="nv"> </span><span class="s">{User.DisplayName}</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">{LootBox.Name}.&quot;</span>
+<span class="w">    </span><span class="nt">GiveBoxById</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;You</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">given</span><span class="nv"> </span><span class="s">{SteamId}</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">{LootBox.Name}.&quot;</span>
+<span class="w">    </span><span class="nt">ReceivedBox</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;You</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">been</span><span class="nv"> </span><span class="s">given</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">{LootBox.Name}!&quot;</span>
+<span class="w">  </span><span class="nt">Errors</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">UnknownLootBox</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Unknown</span><span class="nv"> </span><span class="s">loot</span><span class="nv"> </span><span class="s">box:</span><span class="nv"> </span><span class="s">{Input}&quot;</span>
+<span class="w">    </span><span class="nt">NoLootBox</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;You</span><span class="nv"> </span><span class="s">do</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">have</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">{LootBox.Name}.&quot;</span>
+</code></pre></div>
+</details>
+<hr />
+<h2 id="installation">Installation</h2>
+<ol>
+<li>
+<p>Run the following commands to install necessary libraries:
+  <div class="highlight"><pre><span></span><code>openmod install OpenMod.EntityFrameworkCore.MySql
+</code></pre></div>
+  <div class="highlight"><pre><span></span><code>openmod install SilK.Unturned.Extras
+</code></pre></div></p>
+</li>
+<li>
+<p>Specify the <code>openmod</code> branch in your Imperial Plugins config.</p>
+</li>
+<li>
+<p>Change the connection string in your new <code>DropBoxes/config.yaml</code> file to allow DropBoxes to connect to your MySQL server.</p>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
